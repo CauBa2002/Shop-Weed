@@ -112,6 +112,10 @@
     align-items: center;
 }
 
+.main{
+    position: relative;
+}
+
 .mask-group{
     position: relative;
 }
@@ -619,4 +623,89 @@
 
 .product-list .product-item{
     width: 20%;
+}
+
+.advertisement{
+    padding: 240px 54px 42px 54px;
+    background: #01100B;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.advertisement-title h1{
+    margin: 0 auto;
+    width: 65%;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.advertisement-content p{
+    width: 60%;
+    color: #9D9EA2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.advertisement-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+    gap: 2rem;
+}
+
+.cart-item1{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    padding: 32px 0 0 0;
+    gap: 1.5rem;
+}
+
+.cart-item1 .item1-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    gap: 1.5rem;
+}
+
+.item1-top .top-number{
+    position: absolute;
+    background: #F2BC1B;
+    padding: 8px 12px;
+    top: 0;
+    left: -50px;
+    border-radius: 100%;
+}
+
+.item1-top .top-icon{
+    width: 112px;
+    height: 112px;
+}
+
+.item1-top .top-name{
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.cart-item1 .item1-bot{
+    color: #9D9EA2;
+    text-align: center;
+    line-height: 150%;
+}
+
+.advertisement-button{
+    background: #17AF26;
+    padding: 16px 32px;
+    border-radius: 100px;
+    margin-top: 32px;
 }
