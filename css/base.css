@@ -13,6 +13,14 @@ img{
     object-fit: cover;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+input[type="radio"]:hover, input[type="range"]:hover, input[type="checkbox"]:hover{
+    cursor: pointer;
+}
+
 .fa-soild{
     color: #333;
 }
