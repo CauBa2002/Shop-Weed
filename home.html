@@ -1,890 +1,1266 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop Weed</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="shortcut icon" href="./image/infomation-about-img1.png" type="image/x-icon">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./image/infomation-about-img1.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<body>
-    <header class="home-header header">
-        <div class="header-notification">
-            <p>LIMITED OFFER 30% OFF. Use RABBITT ad Checkout</p>
-            <p>23 : 15 : 00</p>
+  <body>
+    <header class="header">
+      <div class="header-notification">
+        <p>LIMITED OFFER 30% OFF. Use RABBITT ad Checkout</p>
+        <p>23 : 15 : 00</p>
+      </div>
+      <nav class="header-nav__top">
+        <img src="./image/logo.png" alt="" class="top-logo" />
+        <form action="" class="top-search">
+          <input type="text" class="search-input" placeholder="Search" />
+          <button class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <div class="top-account">
+          <div class="account-user">Your Account</div>
+          <div class="account-cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
         </div>
-        <nav class="header-nav__top">
-            <img src="./image/logo.png" alt="" class="top-logo">
-            <form action="" class="top-search">
-                <input type="text" class="search-input" placeholder="Search">
-                <button class="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-            <div class="top-account">
-                <div class="account-user">Your Account</div>
-                <div class="account-cart"><i class="fa-solid fa-bag-shopping"></i></div>
-            </div>
-        </nav>
-        <nav class="header-nav__bot">
-            <div class="bot-item">
-                <span>Shop All</span>
-            </div>
-            <div class="bot-item drop-down">
-                <span onclick="click_dropdown()" class="drop-btn">Flower</span>
-                <i onclick="click_dropdown()" class="fa-solid fa-angle-down drop-btn"></i>
-                <div class="dropdown-content" id="drop-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="bot-item">
-                <span>Edibles</span>
-            </div>
-            <div class="bot-item drop-down">
-                <span onclick="click_dropdown()" class="drop-btn">Concentrates</span>
-                <i onclick="click_dropdown()" class="fa-solid fa-angle-down drop-btn"></i>
-                <div class="dropdown-content" id="drop-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="bot-item">
-                <span>Mushrooms</span>
-            </div>
-            <div class="bot-item drop-down">
-                <span onclick="click_dropdown()" class="drop-btn">Promotions/Bundles</span>
-                <i onclick="click_dropdown()" class="fa-solid fa-angle-down drop-btn"></i>
-                <div id="event-dropdown class="dropdown-content"">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="bot-item drop-down">
-                <span onclick="click_dropdown()" class="drop-btn">Support</span>
-                <i onclick="click_dropdown()" class="fa-solid fa-angle-down drop-btn"></i>
-                <div id="event-dropdown" class="dropdown-content">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#">Link 3</a>
-                </div>
-            </div>
-            <div class="bot-item">
-                <span>Rewards</span>
-            </div>
-            <div class="bot-item">
-                <span>Blog</span>
-            </div>
-        </nav>
+      </nav>
+      <nav class="header-nav__bot">
+        <div class="bot-item">
+          <span>Shop All</span>
+        </div>
+        <div class="bot-item drop-down">
+          <span class="drop-btn">Flower</span>
+          <i class="fa-solid fa-angle-down drop-btn"></i>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="bot-item">
+          <span>Edibles</span>
+        </div>
+        <div class="bot-item drop-down">
+          <span class="drop-btn">Concentrates</span>
+          <i class="fa-solid fa-angle-down drop-btn"></i>
+          <div id="event-dropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="bot-item">
+          <span>Mushrooms</span>
+        </div>
+        <div class="bot-item drop-down">
+          <span class="drop-btn">Promotions/Bundles</span>
+          <i class="fa-solid fa-angle-down drop-btn"></i>
+          <div id="event-dropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="bot-item drop-down">
+          <span class="drop-btn">Support</span>
+          <i class="fa-solid fa-angle-down drop-btn"></i>
+          <div id="event-dropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="bot-item">
+          <span>Rewards</span>
+        </div>
+        <div class="bot-item">
+          <span>Blog</span>
+        </div>
+      </nav>
     </header>
-    <main class="home-main main">
-        <div class="main-mask">
-            <div class="mask-content">
-                <div class="content-left">
-                    <span class="left-title">BEST SELLER</span>
-                    <span class="left-content">BEST DISPENSARY TO BUY WEED ONLINE</span>
-                    <span class="left-organic">Vitamins & Spplements</span>
-                    <span class="left-discount">Get 25% off | Free Shipping</span>
-                    <button class="left-btn">Shop All</button>
-                </div>
-                <div class="content-right">
-                    <img class="right-block1" src="./image/isometric-cubic-1.png" alt="">
-                    <img class="right-image1" src="./image/image-1.png" alt="">
-                    <img class="right-block2" src="./image/isometric-cubic-2.png" alt="">
-                    <img class="right-image2" src="./image/image-2.png" alt="">
-                    <img class="right-block3" src="./image/isometric-cubic-3.png" alt="">
-                    <img class="right-image3" src="./image/image-3.png" alt="">
-                </div>
-                <div class="mark-coating"></div>
-            </div>
-            <div class="mask-cart">
-                <div class="cart-item">
-                    <img class="item-image" src="./image/icon-item-1.png" alt="">
-                    <div class="item-content">
-                        <p style="margin-bottom: 1rem;">Reliable Shipping </p>
-                        <p>Green Society provides Canada Post Xpress Shipping right to your doorstep! You can also opt
-                            in for shipping insurance. For order over $149, shipping is free!
-                        <p>
-                    </div>
-                </div>
-                <div class="cart-item">
-                    <img class="item-image" src="./image/icon-item-2.png" alt="">
-                    <div class="item-content">
-                        <p style="margin-bottom: 1rem;">You're Safe With Us </p>
-                        <p>Our secure payment system accepts the most common farms of payments making the checkout
-                            process quicker! The payments we accept the debit, all major creds, and crytocurrency.</p>
-                    </div>
-                </div>
-                <div class="cart-item">
-                    <img class="item-image" src="./image/icon-item-3.png" alt="">
-                    <div class="item-content">
-                        <p style="margin-bottom: 1rem;"> Best Quality & Pricing </p>
-                        <p> Here at Green Society, we take pride in the quality of our products and sevice. Our price
-                            are set to ensure you receive your medication at a reasonable price and safe ly.</p>
-                    </div>
-                </div>
-            </div>
+    <main class="home-main">
+      <div class="main-mask">
+        <div class="mask-content">
+          <div class="content-left">
+            <span class="left-title">BEST SELLER</span>
+            <span class="left-content">BEST DISPENSARY TO BUY WEED ONLINE</span>
+            <span class="left-organic">Vitamins & Spplements</span>
+            <span class="left-discount">Get 25% off | Free Shipping</span>
+            <button class="left-btn">Shop All</button>
+          </div>
+          <div class="content-right">
+            <img
+              class="right-block1"
+              src="./image/isometric-cubic-1.png"
+              alt=""
+            />
+            <img class="right-image1" src="./image/image-1.png" alt="" />
+            <img
+              class="right-block2"
+              src="./image/isometric-cubic-2.png"
+              alt=""
+            />
+            <img class="right-image2" src="./image/image-2.png" alt="" />
+            <img
+              class="right-block3"
+              src="./image/isometric-cubic-3.png"
+              alt=""
+            />
+            <img class="right-image3" src="./image/image-3.png" alt="" />
+          </div>
+          <div class="mark-coating"></div>
         </div>
-        <div class="main-product">
-            <div class="content-title title-center">BEST DISPENSARY TO BUY <br> WEED ONLINE IN CANADA</div>
-            <nav class="product-header header-top">
-                <div class="nav-item nav-top">Best Seller</div>
-                <div class="nav-item nav-top">Bundles & Promotions</div>
-                <div class="nav-item nav-top">On Sale</div>
-            </nav>
-            <div class="best-seller">
-                <div class="banner-product">
-                    <div class="product-image"><img src="./image/product.png" alt=""></div>
-                    <div class="product-content">
-                        <div class="product-content__title">Shop our Best Sellers</div>
-                        <p class="product-content__text">Lorem ipsum dolor sit amet consectetur. Ullamcorper ipsum
-                            varius lorem blandit lectus magnis feugiat.</p>
-                    </div>
-                    <div class="product-link"><a href="">View All</a></div>
-                </div>
-                <div class="list-product">
-                    <div class="product-item">
-                        <div class="item-img"><img src="./image/product1.png" alt=""></div>
-                        <div class="item-type">FLOWER</div>
-                        <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                        <div class="item-star">
-                            <i class="fa-solid fa-star"></i>
-                            4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                        </div>
-                        <div class="item-discount">Sativa 100%</div>
-                        <div class="item-price"> $80.00
-                            <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                        </div>
-                        <div class="list-mass">
-                            <div class="item-mass">28g</div>
-                            <div class="item-mass">1/2lb</div>
-                            <div class="item-mass">1/4lb</div>
-                        </div>
-                        <button class="item-button">Add to Cart</button>
-                    </div>
-                    <div class="product-item">
-                        <div class="item-img">
-                            <img src="./image/product.png" alt="">
-                            <div class="out-of-stock">Out of Stock</div>
-                        </div>
-                        <div class="item-type">CONCENTRASES</div>
-                        <div class="item-name">Mix And Match Shatter/Budder 28g(4 X 7G)</div>
-                        <div class="item-star">
-                            <i class="fa-solid fa-star"></i>
-                            4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                        </div>
-                        <div class="item-discount">Indica 70%</div>
-                        <div class="item-price">
-                            <p class="text-bland text-strikethrough">$200.00</p>
-                            $102.00
-                        </div>
-                        <div class="list-mass">
-                            <div class="item-mass">28g</div>
-                            <div class="item-mass">1/2lb</div>
-                            <div class="item-mass">1/4lb</div>
-                        </div>
-                        <button class="item-button">Add to Cart</button>
-                    </div>
-                    <div class="product-item">
-                        <div class="item-img">
-                            <div class="ounce">$60 ounce</div>
-                            <img src="./image/product1.png" alt="">
-                        </div>
-                        <div class="item-type">FLOWER</div>
-                        <div class="item-name">2 Oz Deal Ahi Tuna + Master Tuna</div>
-                        <div class="item-star">
-                            <i class="fa-solid fa-star"></i>
-                            4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                        </div>
-                        <div class="item-discount" style="display: none;"></div>
-                        <div class="item-price" style="padding-top: 70px;">
-                            <p class="text-bland text-strikethrough">$200.00</p>
-                            $120.00
-                        </div>
-                        <div class="list-mass">
-                            <div class="item-mass">28g</div>
-                            <div class="item-mass">1/2lb</div>
-                            <div class="item-mass">1/4lb</div>
-                        </div>
-                        <button class="item-button">Add to Cart</button>
-                    </div>
-                </div>
+        <div class="mask-cart">
+          <div class="cart-item">
+            <img class="item-image" src="./image/icon-item-1.png" alt="" />
+            <div class="item-content">
+              <p style="margin-bottom: 1rem">Reliable Shipping</p>
+              <p>
+                Green Society provides Canada Post Xpress Shipping right to your
+                doorstep! You can also opt in for shipping insurance. For order
+                over $149, shipping is free!
+              </p>
+
+              <p></p>
             </div>
-            <div class="content-title">CUSTOMER TESTIMONAILS</div>
-            <div class="person-complent">
-                <div class="block-complent complent-content">
-                    <div class="complent-title">VOTED BEST ONLINE DISPENSARY IN CANADA</div>
-                    <div class="underline"></div>
-                    <div class="complent-name">Google</div>
-                    <div class="complent-text">Exellencet</div>
-                    <div class="complent-evaluate">
-                        <div class="icon-star">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="text-evaluate">on 135 <p style="opacity:0.6;">Reviews</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="block-complent">
-                    <div class="block-content">
-                        <div class="account-user">
-                            <div class="avatar-person"><img src="./image/profile1.png" alt=""></div>
-                            <div class="name-person">Vikki Starr</div>
-                        </div>
-                        <div class="underline"></div>
-                        <div class="testimony">
-                            <div class="testimony-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star" style="color:#f4f4f4; opacity:0.7;"></i>
-                            </div>
-                            <div class="testimony-content">Absulutely love TopShelfBC; affordable on any budget and such
-                                fast delivery, straight to my door! I recommend them to all my friends and family for
-                                their 420 needs.</div>
-                        </div>
-                    </div>
-                    <div class="time-line">January 15, 2023</div>
-                </div>
-                <div class="block-complent">
-                    <div class="block-content">
-                        <div class="account-user">
-                            <div class="avatar-person"><img src="./image/profile2.png" alt=""></div>
-                            <div class="name-person">Terry Baskey</div>
-                        </div>
-                        <div class="underline"></div>
-                        <div class="testimony">
-                            <div class="testimony-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="testimony-content">Best damn place to buy your canabis at great prices</div>
-                        </div>
-                    </div>
-                    <div class="time-line">January 5, 2023</div>
-                </div>
-                <div class="block-complent">
-                    <div class="block-content">
-                        <div class="account-user">
-                            <div class="avatar-person"><img src="./image/profile2.png" alt=""></div>
-                            <div class="name-person">Terry Baskey</div>
-                        </div>
-                        <div class="underline"></div>
-                        <div class="testimony">
-                            <div class="testimony-star">
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                            </div>
-                            <div class="testimony-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                                Asperiores quidem quas totam assumenda, qui reiciendis ipsa laboriosam enim? Quasi dolor
-                                modi qui natus expedita architecto recusandae rem blanditiis, temporibus alias?</div>
-                        </div>
-                    </div>
-                    <div class="time-line">January 5, 2023</div>
-                </div>
+          </div>
+          <div class="cart-item">
+            <img class="item-image" src="./image/icon-item-2.png" alt="" />
+            <div class="item-content">
+              <p style="margin-bottom: 1rem">You're Safe With Us</p>
+              <p>
+                Our secure payment system accepts the most common farms of
+                payments making the checkout process quicker! The payments we
+                accept the debit, all major creds, and crytocurrency.
+              </p>
             </div>
-            <div class="content-title">CHOOSE YOUR WEED</div>
-            <nav class="product-header header-bot">
-                <div class="nav-title">Filter by Interest</div>
-                <div class="nav-item nav-bot">Flowers</div>
-                <div class="nav-item nav-bot">Mushrooms</div>
-                <div class="nav-item nav-bot">Concentrate</div>
-                <div class="nav-item nav-bot">Edible</div>
-                <div class="nav-item nav-bot">Shop All Weed</div>
-            </nav>
-            <div class="underline" style="margin-right: 64px;"></div>
-            <div class="product-list">
-                <div class="product-item">
-                    <div class="item-img">
-                        <div class="out-of-stock">Out of Stock</div>
-                        <img src="./image/product.png" alt="">
-                    </div>
-                    <div class="item-type">FLOWER</div>
-                    <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                    <div class="item-star">
-                        <i class="fa-solid fa-star"></i>
-                        4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                    </div>
-                    <div class="item-discount">Sativa 100%</div>
-                    <div class="item-price"> $80.00
-                        <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                    </div>
-                    <div class="list-mass">
-                        <div class="item-mass">28g</div>
-                        <div class="item-mass">1/2lb</div>
-                        <div class="item-mass">1/4lb</div>
-                    </div>
-                    <div class="item-button">Add to Cart</div>
-                </div>
-                <div class="product-item">
-                    <div class="item-img"><img src="./image/product1.png" alt=""></div>
-                    <div class="item-type">FLOWER</div>
-                    <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                    <div class="item-star">
-                        <i class="fa-solid fa-star"></i>
-                        4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                    </div>
-                    <div class="item-discount">Sativa 100%</div>
-                    <div class="item-price"> $80.00
-                        <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                    </div>
-                    <div class="list-mass">
-                        <div class="item-mass">28g</div>
-                        <div class="item-mass">1/2lb</div>
-                        <div class="item-mass">1/4lb</div>
-                    </div>
-                    <div class="item-button">Add to Cart</div>
-                </div>
-                <div class="product-item">
-                    <div class="item-img"><img src="./image/image-3.png" alt=""></div>
-                    <div class="item-type">FLOWER</div>
-                    <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                    <div class="item-star">
-                        <i class="fa-solid fa-star"></i>
-                        4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                    </div>
-                    <div class="item-discount">Sativa 100%</div>
-                    <div class="item-price"> $80.00
-                        <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                    </div>
-                    <div class="list-mass">
-                        <div class="item-mass">28g</div>
-                        <div class="item-mass">1/2lb</div>
-                        <div class="item-mass">1/4lb</div>
-                    </div>
-                    <div class="item-button">Add to Cart</div>
-                </div>
-                <div class="product-item">
-                    <div class="item-img">
-                        <div class="ounce">$60 ounce</div>
-                        <img src="./image/product1.png" alt="">
-                    </div>
-                    <div class="item-type">FLOWER</div>
-                    <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                    <div class="item-star">
-                        <i class="fa-solid fa-star"></i>
-                        4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                    </div>
-                    <div class="item-discount">Sativa 100%</div>
-                    <div class="item-price"> $80.00
-                        <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                    </div>
-                    <div class="list-mass">
-                        <div class="item-mass">28g</div>
-                        <div class="item-mass">1/2lb</div>
-                        <div class="item-mass">1/4lb</div>
-                    </div>
-                    <div class="item-button">Add to Cart</div>
-                </div>
-                <div class="product-item">
-                    <div class="item-img"><img src="./image/product2.png" alt=""></div>
-                    <div class="item-type">FLOWER</div>
-                    <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                    <div class="item-star">
-                        <i class="fa-solid fa-star"></i>
-                        4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                    </div>
-                    <div class="item-discount">Sativa 100%</div>
-                    <div class="item-price"> $80.00
-                        <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                    </div>
-                    <div class="list-mass">
-                        <div class="item-mass">28g</div>
-                        <div class="item-mass">1/2lb</div>
-                        <div class="item-mass">1/4lb</div>
-                    </div>
-                    <div class="item-button">Add to Cart</div>
-                </div>
-                <div class="product-item">
-                    <div class="item-img">
-                        <div class="ounce">$60 ounce</div>
-                        <img src="./image/image-1.png" alt="">
-                    </div>
-                    <div class="item-type">FLOWER</div>
-                    <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                    <div class="item-star">
-                        <i class="fa-solid fa-star"></i>
-                        4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                    </div>
-                    <div class="item-discount">Sativa 100%</div>
-                    <div class="item-price"> $80.00
-                        <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                    </div>
-                    <div class="list-mass">
-                        <div class="item-mass">28g</div>
-                        <div class="item-mass">1/2lb</div>
-                        <div class="item-mass">1/4lb</div>
-                    </div>
-                    <div class="item-button">Add to Cart</div>
-                </div>
-                <div class="product-item">
-                    <div class="item-img">
-                        <div class="out-of-stock">Out of Stock</div>
-                        <img src="./image/image-2.png" alt="">
-                    </div>
-                    <div class="item-type">FLOWER</div>
-                    <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                    <div class="item-star">
-                        <i class="fa-solid fa-star"></i>
-                        4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                    </div>
-                    <div class="item-discount">Sativa 100%</div>
-                    <div class="item-price"> $80.00
-                        <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                    </div>
-                    <div class="list-mass">
-                        <div class="item-mass">28g</div>
-                        <div class="item-mass">1/2lb</div>
-                        <div class="item-mass">1/4lb</div>
-                    </div>
-                    <div class="item-button">Add to Cart</div>
-                </div>
-                <div class="product-item">
-                    <div class="item-img"><img src="./image/product3.png" alt=""></div>
-                    <div class="item-type">FLOWER</div>
-                    <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                    <div class="item-star">
-                        <i class="fa-solid fa-star"></i>
-                        4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                    </div>
-                    <div class="item-discount">Sativa 100%</div>
-                    <div class="item-price"> $80.00
-                        <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                    </div>
-                    <div class="list-mass">
-                        <div class="item-mass">28g</div>
-                        <div class="item-mass">1/2lb</div>
-                        <div class="item-mass">1/4lb</div>
-                    </div>
-                    <div class="item-button">Add to Cart</div>
-                </div>
+          </div>
+          <div class="cart-item">
+            <img class="item-image" src="./image/icon-item-3.png" alt="" />
+            <div class="item-content">
+              <p style="margin-bottom: 1rem">Best Quality & Pricing</p>
+              <p>
+                Here at Green Society, we take pride in the quality of our
+                products and sevice. Our price are set to ensure you receive
+                your medication at a reasonable price and safe ly.
+              </p>
             </div>
+          </div>
         </div>
-        <div class="main-advertisement">
-            <div class="advertisement-title">
-                <h1>HOW TO ORDER WEED ONLINE FROM TOP SHELF BC - MAIL ORDER MARIJUANA</h1>
-            </div>
-            <div class="advertisement-content">
-                <p>Ordering weed online from Top Shelf BC is easy. We are proud to have made the process accessible
-                    across multiple platforms and simple to understand, meaning that more people can come to us to buy
-                    their cannabis products online.</p>
-            </div>
-            <div class="advertisement-card">
-                <div class="cart-item">
-                    <div class="item-top">
-                        <div class="top-number">1</div>
-                        <div class="top-icon">
-                            <img src="./image/img-cart1.png" alt="">
-                        </div>
-                        <div class="top-name">REGISTER</div>
-                    </div>
-                    <div class="item-bot">
-                        <p>Sign up for an account with us. This is quick and simple. We don’t require any more details
-                            from you than the bare minimum needed for you to place an order and get your product
-                            delivered.</p>
-                    </div>
-                </div>
-                <div class="cart-item">
-                    <div class="item-top">
-                        <div class="top-number">2</div>
-                        <div class="top-icon">
-                            <img src="./image/img-cart2.png" alt="">
-                        </div>
-                        <div class="top-name">SHOP</div>
-                    </div>
-                    <div class="item-bot">
-                        <p>Decide on what you want to purchase. We stock a wide range of edibles,flowers , concentrates
-                            and mushrooms there is bound to be something for everyone.</p>
-                    </div>
-                </div>
-                <div class="cart-item">
-                    <div class="item-top">
-                        <div class="top-number">3</div>
-                        <div class="top-icon">
-                            <img src="./image/img-cart3.png" alt="">
-                        </div>
-                        <div class="top-name">MAKE PAYMENT</div>
-                    </div>
-                    <div class="item-bot">
-                        <p>Pay securely. Our site boasts sturdy protection certificates to keep your card details and
-                            related data safe.</p>
-                    </div>
-                </div>
-                <div class="cart-item">
-                    <div class="item-top">
-                        <div class="top-number">4</div>
-                        <div class="top-icon">
-                            <img src="./image/img-cart4.png" alt="">
-                        </div>
-                        <div class="top-name">RELAX</div>
-                    </div>
-                    <div class="item-bot">
-                        <p>Your product will be packaged discretely and shipped by Canada Post Xpresspost. We will
-                            provide you with a tracking number so then you can follow your mail order marijuana every
-                            step of the way.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="advertisement-button">Chosse your Weed</div>
-            <div class="main-mark">
-                <div class="mark-text">
-                    <div class="text-title">REFER A FRIENDS</div>
-                    <div class="text-content">
-                        <p>And get</p>
-                        <p class="text-content__price">$30!</p>
-                    </div>
-                </div>
-                <div class="mark-button">Refer Here</div>
-            </div>
+      </div>
+      <div class="main-product">
+        <div class="content-title title-center">
+          BEST DISPENSARY TO BUY <br />
+          WEED ONLINE IN CANADA
         </div>
-        <div class="main-infomation">
-            <div class="infomation-title">WHAT MAKES US THE <span style="color: #F2BC1B">#1</span> ONLINE MARIJUANA
-                DISPENSARY IN CANADA?</div>
-            <div class="infomation-content">When it comes to what makes us the foremost online marijuana dispensary in
-                Canada, we could wax lyrical about our positive qualities. Instead, to make this information clearer,
-                we’ve highlighted the six prioritized features that we feel makes us a cut above the rest.</div>
-            <div class="infomation-list-card">
-                <div class="card-item">
-                    <div class="card-item-icon"><img src="./image/infomation-cart-item1.png" alt=""></div>
-                    <div class="card-item-text">
-                        <div class="text-title">CUSTOMER SERVICE</div>
-                        <div class="text-content">Whether it is answering any questions you have before making a
-                            purchase, helping out with the buying process itself or taking your feedback under
-                            consideration, we are proud to provide high quality customer service that makes you – the
-                            customer – the most important person in the transaction.</div>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-icon"><img src="./image/infomation-cart-item2.png" alt=""></div>
-                    <div class="card-item-text">
-                        <div class="text-title">SECURITY</div>
-                        <div class="text-content">When it comes to security, we only keep what details are necessary for
-                            you to have an account with us and make an order. When it comes to shipping your mail order
-                            marijuana out, we use only tamper-proof and discrete packaging so then what you’ve purchased
-                            is your business only.</div>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-icon"><img src="./image/infomation-cart-item3.png" alt=""></div>
-                    <div class="card-item-text">
-                        <div class="text-title">BEST VALUE</div>
-                        <div class="text-content">We are continually adjusting what we supply and our prices to ensure
-                            that we maintain an optimal balance of affordable and quality for our products. We invest in
-                            the best quality strains that we can find and are always on the lookout for new, affordable
-                            and high quality weed products.</div>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-icon"><img src="./image/infomation-cart-item4.png" alt=""></div>
-                    <div class="card-item-text">
-                        <div class="text-title">DELIVERY INSURANCE</div>
-                        <div class="text-content">If your mail order marijuana becomes lost, stolen, or damaged during
-                            transit, we will send you a replacement completely free of charge. Free Canada Post Xpress
-                            shipping on all orders over $120</div>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-icon"><img src="./image/infomation-cart-item5.png" alt=""></div>
-                    <div class="card-item-text">
-                        <div class="text-title">HIGHEST QUALITY</div>
-                        <div class="text-content">All of our cannabis products are tested to ensure that they are the
-                            highest quality possible. We work with expert suppliers and are always revising what makes a
-                            quality cannabis product to ensure that we have only the best available.</div>
-                    </div>
-                </div>
-                <div class="card-item">
-                    <div class="card-item-icon"><img src="./image/infomation-cart-item6.png" alt=""></div>
-                    <div class="card-item-text">
-                        <div class="text-title">TRUST</div>
-                        <div class="text-content">With over 15 years in the weed business, you can rest assured that you
-                            will be taken care of. You can guarantee that we have your best interests in mind. Feel free
-                            to check out our reviews.</div>
-                    </div>
-                </div>
+        <nav class="product-header header-top">
+          <div class="nav-item nav-top">Best Seller</div>
+          <div class="nav-item nav-top">Bundles & Promotions</div>
+          <div class="nav-item nav-top">On Sale</div>
+        </nav>
+        <div class="best-seller">
+          <div class="banner-product">
+            <div class="product-image">
+              <img src="./image/product.png" alt="" />
             </div>
-            <div class="infomation-product">
-                <div class="content-title">RECENTLY ADDED</div>
-                <nav class="product-header header-bot">
-                    <div class="nav-title">Filter by Interest</div>
-                    <div class="nav-item nav-bot">Flowers</div>
-                    <div class="nav-item nav-bot">Mushrooms</div>
-                    <div class="nav-item nav-bot">Concentrate</div>
-                    <div class="nav-item nav-bot">Edible</div>
-                    <div class="nav-item nav-bot">Shop All Weed</div>
-                    <a href="" class="nav-link">Show All</a>
-                </nav>
-                <div class="underline"></div>
-                <div class="product-list">
-                    <div class="product-item">
-                        <div class="item-img">
-                            <div class="out-of-stock">Out of Stock</div>
-                            <img src="./image/product.png" alt="">
-                        </div>
-                        <div class="item-type">FLOWER</div>
-                        <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                        <div class="item-star">
-                            <i class="fa-solid fa-star"></i>
-                            4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                        </div>
-                        <div class="item-discount">Sativa 100%</div>
-                        <div class="item-price"> $80.00
-                            <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                        </div>
-                        <div class="list-mass">
-                            <div class="item-mass">28g</div>
-                            <div class="item-mass">1/2lb</div>
-                            <div class="item-mass">1/4lb</div>
-                        </div>
-                        <div class="item-button">Add to Cart</div>
-                    </div>
-                    <div class="product-item">
-                        <div class="item-img"><img src="./image/product1.png" alt=""></div>
-                        <div class="item-type">FLOWER</div>
-                        <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                        <div class="item-star">
-                            <i class="fa-solid fa-star"></i>
-                            4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                        </div>
-                        <div class="item-discount">Sativa 100%</div>
-                        <div class="item-price"> $80.00
-                            <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                        </div>
-                        <div class="list-mass">
-                            <div class="item-mass">28g</div>
-                            <div class="item-mass">1/2lb</div>
-                            <div class="item-mass">1/4lb</div>
-                        </div>
-                        <div class="item-button">Add to Cart</div>
-                    </div>
-                    <div class="product-item">
-                        <div class="item-img"><img src="./image/image-3.png" alt=""></div>
-                        <div class="item-type">FLOWER</div>
-                        <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                        <div class="item-star">
-                            <i class="fa-solid fa-star"></i>
-                            4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                        </div>
-                        <div class="item-discount">Sativa 100%</div>
-                        <div class="item-price"> $80.00
-                            <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                        </div>
-                        <div class="list-mass">
-                            <div class="item-mass">28g</div>
-                            <div class="item-mass">1/2lb</div>
-                            <div class="item-mass">1/4lb</div>
-                        </div>
-                        <div class="item-button">Add to Cart</div>
-                    </div>
-                    <div class="product-item">
-                        <div class="item-img">
-                            <div class="ounce">$60 ounce</div>
-                            <img src="./image/product1.png" alt="">
-                        </div>
-                        <div class="item-type">FLOWER</div>
-                        <div class="item-name">2 Oz Deal Watermelon Zkittkes + Purple Gushers</div>
-                        <div class="item-star">
-                            <i class="fa-solid fa-star"></i>
-                            4.6/5 | 135 <p style="opacity: 0.6; font-weight:lighter; padding-left:1rem;">Reviews</p>
-                        </div>
-                        <div class="item-discount">Sativa 100%</div>
-                        <div class="item-price"> $80.00
-                            <p class="text-bland" style="font-weight: 100;">/ gam</p>
-                        </div>
-                        <div class="list-mass">
-                            <div class="item-mass">28g</div>
-                            <div class="item-mass">1/2lb</div>
-                            <div class="item-mass">1/4lb</div>
-                        </div>
-                        <div class="item-button">Add to Cart</div>
-                    </div>
-                </div>
+            <div class="product-content">
+              <div class="product-content__title">Shop our Best Sellers</div>
+              <p class="product-content__text">
+                Lorem ipsum dolor sit amet consectetur. Ullamcorper ipsum varius
+                lorem blandit lectus magnis feugiat.
+              </p>
+            </div>
+            <div class="product-link"><a href="">View All</a></div>
+          </div>
+          <div class="list-product">
+            <div class="product-item">
+              <div class="item-img">
+                <img src="./image/product1.png" alt="" />
+              </div>
+              <div class="item-type">FLOWER</div>
+              <div class="item-name">
+                2 Oz Deal Watermelon Zkittkes + Purple Gushers
+              </div>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                4.6/5 | 135
+                <p
+                  style="opacity: 0.6; font-weight: lighter; padding-left: 1rem"
+                >
+                  Reviews
+                </p>
+              </div>
+              <div class="item-discount">Sativa 100%</div>
+              <p class="item-price">
+                $80.00
+                <span style="color: #9d9ea2; opacity: 0.7">/ gam</span>
+              </p>
+              <div class="list-mass">
+                <div class="item-mass">28g</div>
+                <div class="item-mass">1/2lb</div>
+                <div class="item-mass">1/4lb</div>
+              </div>
+              <button class="item-button">Add to Cart</button>
+            </div>
+            <div class="product-item">
+              <div class="item-img">
+                <img src="./image/product.png" alt="" />
+                <div class="out-of-stock">Out of Stock</div>
+              </div>
+              <div class="item-type">CONCENTRASES</div>
+              <div class="item-name">
+                Mix And Match Shatter/Budder 28g(4 X 7G)
+              </div>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                4.6/5 | 135
+                <p
+                  style="opacity: 0.6; font-weight: lighter; padding-left: 1rem"
+                >
+                  Reviews
+                </p>
+              </div>
+              <div class="item-discount">Indica 70%</div>
+              <p class="item-price">
+                <span
+                  style="
+                    opacity: 0.7;
+                    color: #9d9ea2;
+                    text-decoration: line-through;
+                  "
+                  >$200.00</span
+                >
+                $102.00
+              </p>
+              <div class="list-mass">
+                <div class="item-mass">28g</div>
+                <div class="item-mass">1/2lb</div>
+                <div class="item-mass">1/4lb</div>
+              </div>
+              <button class="item-button">Add to Cart</button>
+            </div>
+            <div class="product-item">
+              <div class="item-img">
+                <div class="ounce">$60 ounce</div>
+                <img src="./image/product1.png" alt="" />
+              </div>
+              <div class="item-type">FLOWER</div>
+              <div class="item-name">2 Oz Deal Ahi Tuna + Master Tuna</div>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                4.6/5 | 135
+                <p
+                  style="opacity: 0.6; font-weight: lighter; padding-left: 1rem"
+                >
+                  Reviews
+                </p>
+              </div>
+              <div class="item-discount" style="display: none"></div>
+              <p class="item-price" style="padding-top: 68px">
+                <span
+                  style="
+                    opacity: 0.7;
+                    color: #9d9ea2;
+                    text-decoration: line-through;
+                  "
+                  >$200.00</span
+                >
+                $102.00
+              </p>
+              <div class="list-mass">
+                <div class="item-mass">28g</div>
+                <div class="item-mass">1/2lb</div>
+                <div class="item-mass">1/4lb</div>
+              </div>
+              <button class="item-button">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <div class="content-title">CUSTOMER TESTIMONAILS</div>
+        <div class="person-complent">
+          <div class="block-complent complent-content">
+            <div class="complent-title">
+              VOTED BEST ONLINE DISPENSARY IN CANADA
             </div>
             <div class="underline"></div>
-            <div class="infomation-about">
-                <div class="about-item">
-                    <div class="item-image"><img src="./image/infomation-about-img1.png" alt=""></div>
-                    <div class="item-name">Indica</div>
-                    <div class="item-content">This type of cannabis is commonly taken by those who want to sink into a
-                        state of total relaxation in every limb. This reduces stress overall and can take your worries
-                        and fatigue away. Because of its relaxing effects, it is suggested to use this type of cannabis
-                        at night. It is particularly recommended for people who have trouble sleeping, be it due to
-                        insomnia, pain or other associated sleep issues.</div>
-                    <a href="" class="item-link">Shop Indica</a>
-                </div>
-                <div class="about-item">
-                    <div class="item-image"><img src="./image/infomation-about-img2.png" alt=""></div>
-                    <div class="item-name">Sativa</div>
-                    <div class="item-content">Contrary to the deep all-body relaxation that comes with the use of indica
-                        strains, sativas are known for increasing the feeling of creativity, enhancing focus and
-                        lessening anxiety. This is more of a mind-centered high in terms of how and where you will feel
-                        the effects. Given its stimulating nature, it is recommended to use this during the day.</div>
-                    <a href="" class="item-link">Shop Sativa</a>
-                </div>
-                <div class="about-item">
-                    <div class="item-image"><img src="./image/infomation-about-img3.png" alt=""></div>
-                    <div class="item-name">Hybirds</div>
-                    <div class="item-content">Hybrid strains are just that – they combine the head-focused high effects
-                        of sativas with the bodily relaxation of indicas. This is ideal for people who really want to
-                        sooth any fatigue and worries while also clearing the mind ready to focus fresh on something
-                        new. Hybrids are expertly tailored to result in strains with specific effects. Useful strain
-                        vocabulary to familiarize yourself with when it comes to hybrids includes sativa-dominant (full,
-                        bodily relaxation), indica-dominant (boosting creativity, increasing mood and lessening anxiety)
-                        and balanced (the best of both worlds).</div>
-                    <a href="" class="item-link">Shop Hybirds</a>
-                </div>
+            <div class="complent-name">Google</div>
+            <div class="complent-text">Exellencet</div>
+            <div class="complent-evaluate">
+              <div class="icon-star">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <div class="text-evaluate">
+                on 135
+                <p style="opacity: 0.6">Reviews</p>
+              </div>
             </div>
-        </div>
-        <div class="main-education">
-            <header class="education-header">
-                <div class="header-title">WEED EDUCATION</div>
-                <a href="" class="header-link">Show All</a>
-            </header>
-            <div class="underline"></div>
-            <div class="education-card">
-                <div class="card-item">
-                    <img src="./image/education-item-image1.png" alt="" class="item-image">
-                    <div class="item-datetime">January 24, 2023</div>
-                    <div class="item-title">12 Mistakes To Avoid When Buying Cannabis Online</div>
-                    <div class="item-content">Buying cannabis online can be a great way to get your hands on the
-                        products you need without leaving the comfort of your home. But …</div>
-                    <a href="" class="item-link">Read More</a>
+          </div>
+          <div class="block-complent">
+            <div class="block-content">
+              <div class="account-user">
+                <div class="avatar-person">
+                  <img src="./image/profile1.png" alt="" />
                 </div>
-                <div class="card-item">
-                    <img src="./image/education-item-image2.png" alt="" class="item-image">
-                    <div class="item-datetime">January 20, 2023</div>
-                    <div class="item-title">How To Store Cannabis and Keep it Fresh and Potent?</div>
-                    <div class="item-content">Cannabis packaging has advanced dramatically in recent years, whether your
-                        state has a medicinal marijuana programme, legal adult-use weed, or both. Most ...</div>
-                    <a href="" class="item-link">Read More</a>
+                <div class="name-person">Vikki Starr</div>
+              </div>
+              <div class="underline"></div>
+              <div class="testimony">
+                <div class="testimony-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i
+                    class="fa-solid fa-star"
+                    style="color: #f4f4f4; opacity: 0.7"
+                  ></i>
                 </div>
-                <div class="card-item">
-                    <img src="./image/education-item-image3.png" alt="" class="item-image">
-                    <div class="item-datetime">January 19, 2023</div>
-                    <div class="item-title">The Ultimate Guide to Checking the Quality of Cannabis – 10 Industry Leading
-                        Tips</div>
-                    <div class="item-content">Quality cannabis is a term used to describe cannabis products that meet
-                        specific standards of excellence. It is essential to understand what quality cannabis means, …
-                    </div>
-                    <a href="" class="item-link">Read More</a>
+                <div class="testimony-content">
+                  Absulutely love TopShelfBC; affordable on any budget and such
+                  fast delivery, straight to my door! I recommend them to all my
+                  friends and family for their 420 needs.
                 </div>
+              </div>
             </div>
+            <div class="time-line">January 15, 2023</div>
+          </div>
+          <div class="block-complent">
+            <div class="block-content">
+              <div class="account-user">
+                <div class="avatar-person">
+                  <img src="./image/profile2.png" alt="" />
+                </div>
+                <div class="name-person">Terry Baskey</div>
+              </div>
+              <div class="underline"></div>
+              <div class="testimony">
+                <div class="testimony-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimony-content">
+                  Best damn place to buy your canabis at great prices
+                </div>
+              </div>
+            </div>
+            <div class="time-line">January 5, 2023</div>
+          </div>
+          <div class="block-complent">
+            <div class="block-content">
+              <div class="account-user">
+                <div class="avatar-person">
+                  <img src="./image/profile2.png" alt="" />
+                </div>
+                <div class="name-person">Terry Baskey</div>
+              </div>
+              <div class="underline"></div>
+              <div class="testimony">
+                <div class="testimony-star">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="testimony-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Asperiores quidem quas totam assumenda, qui reiciendis ipsa
+                  laboriosam enim? Quasi dolor modi qui natus expedita
+                  architecto recusandae rem blanditiis, temporibus alias?
+                </div>
+              </div>
+            </div>
+            <div class="time-line">January 5, 2023</div>
+          </div>
         </div>
+        <div class="content-title">CHOOSE YOUR WEED</div>
+        <nav class="product-header header-bot">
+          <div class="nav-title">Filter by Interest</div>
+          <div class="nav-item nav-bot">Flowers</div>
+          <div class="nav-item nav-bot">Mushrooms</div>
+          <div class="nav-item nav-bot">Concentrate</div>
+          <div class="nav-item nav-bot">Edible</div>
+          <div class="nav-item nav-bot">Shop All Weed</div>
+        </nav>
+        <div class="underline" style="margin-right: 64px"></div>
+        <div class="product-list">
+          <div class="product-item">
+            <div class="item-img">
+              <div class="out-of-stock">Out of Stock</div>
+              <img src="./image/product.png" alt="" />
+            </div>
+            <div class="item-type">FLOWER</div>
+            <div class="item-name">
+              2 Oz Deal Watermelon Zkittkes + Purple Gushers
+            </div>
+            <div class="item-star">
+              <i class="fa-solid fa-star"></i>
+              4.6/5 | 135
+              <p style="opacity: 0.6; font-weight: lighter; padding-left: 1rem">
+                Reviews
+              </p>
+            </div>
+            <div class="item-discount">Sativa 100%</div>
+            <p class="item-price">
+              $80.00
+              <span style="color: #9d9ea2; opacity: 0.7">/ gam</span>
+            </p>
+            <div class="list-mass">
+              <div class="item-mass">28g</div>
+              <div class="item-mass">1/2lb</div>
+              <div class="item-mass">1/4lb</div>
+            </div>
+            <div class="item-button">Add to Cart</div>
+          </div>
+          <div class="product-item">
+            <div class="item-img">
+              <img src="./image/product1.png" alt="" />
+            </div>
+            <div class="item-type">FLOWER</div>
+            <div class="item-name">
+              2 Oz Deal Watermelon Zkittkes + Purple Gushers
+            </div>
+            <div class="item-star">
+              <i class="fa-solid fa-star"></i>
+              4.6/5 | 135
+              <p style="opacity: 0.6; font-weight: lighter; padding-left: 1rem">
+                Reviews
+              </p>
+            </div>
+            <div class="item-discount">Sativa 100%</div>
+            <p class="item-price">
+              <span
+                style="
+                  opacity: 0.7;
+                  color: #9d9ea2;
+                  text-decoration: line-through;
+                "
+                >$200.00</span
+              >
+              $102.00
+            </p>
+            <div class="list-mass">
+              <div class="item-mass">28g</div>
+              <div class="item-mass">1/2lb</div>
+              <div class="item-mass">1/4lb</div>
+            </div>
+            <div class="item-button">Add to Cart</div>
+          </div>
+          <div class="product-item">
+            <div class="item-img"><img src="./image/image-3.png" alt="" /></div>
+            <div class="item-type">FLOWER</div>
+            <div class="item-name">
+              2 Oz Deal Watermelon Zkittkes + Purple Gushers
+            </div>
+            <div class="item-star">
+              <i class="fa-solid fa-star"></i>
+              4.6/5 | 135
+              <p style="opacity: 0.6; font-weight: lighter; padding-left: 1rem">
+                Reviews
+              </p>
+            </div>
+            <div class="item-discount">Sativa 100%</div>
+            <p class="item-price">
+              <span
+                style="
+                  opacity: 0.7;
+                  color: #9d9ea2;
+                  text-decoration: line-through;
+                "
+                >$200.00</span
+              >
+              $102.00
+            </p>
+            <div class="list-mass">
+              <div class="item-mass">28g</div>
+              <div class="item-mass">1/2lb</div>
+              <div class="item-mass">1/4lb</div>
+            </div>
+            <div class="item-button">Add to Cart</div>
+          </div>
+          <div class="product-item">
+            <div class="item-img">
+              <div class="ounce">$60 ounce</div>
+              <img src="./image/product1.png" alt="" />
+            </div>
+            <div class="item-type">FLOWER</div>
+            <div class="item-name">
+              2 Oz Deal Watermelon Zkittkes + Purple Gushers
+            </div>
+            <div class="item-star">
+              <i class="fa-solid fa-star"></i>
+              4.6/5 | 135
+              <p style="opacity: 0.6; font-weight: lighter; padding-left: 1rem">
+                Reviews
+              </p>
+            </div>
+            <div class="item-discount">Sativa 100%</div>
+            <p class="item-price">
+              <span
+                style="
+                  opacity: 0.7;
+                  color: #9d9ea2;
+                  text-decoration: line-through;
+                "
+                >$200.00</span
+              >
+              $102.00
+            </p>
+            <div class="list-mass">
+              <div class="item-mass">28g</div>
+              <div class="item-mass">1/2lb</div>
+              <div class="item-mass">1/4lb</div>
+            </div>
+            <div class="item-button">Add to Cart</div>
+          </div>
+          <div class="product-item">
+            <div class="item-img">
+              <img src="./image/product2.png" alt="" />
+            </div>
+            <div class="item-type">FLOWER</div>
+            <div class="item-name">
+              2 Oz Deal Watermelon Zkittkes + Purple Gushers
+            </div>
+            <div class="item-star">
+              <i class="fa-solid fa-star"></i>
+              4.6/5 | 135
+              <p style="opacity: 0.6; font-weight: lighter; padding-left: 1rem">
+                Reviews
+              </p>
+            </div>
+            <div class="item-discount">Sativa 100%</div>
+            <p class="item-price">
+              $80.00
+              <span style="color: #9d9ea2; opacity: 0.7">/ gam</span>
+            </p>
+            <div class="list-mass">
+              <div class="item-mass">28g</div>
+              <div class="item-mass">1/2lb</div>
+              <div class="item-mass">1/4lb</div>
+            </div>
+            <div class="item-button">Add to Cart</div>
+          </div>
+          <div class="product-item">
+            <div class="item-img">
+              <div class="ounce">$60 ounce</div>
+              <img src="./image/image-1.png" alt="" />
+            </div>
+            <div class="item-type">FLOWER</div>
+            <div class="item-name">
+              2 Oz Deal Watermelon Zkittkes + Purple Gushers
+            </div>
+            <div class="item-star">
+              <i class="fa-solid fa-star"></i>
+              4.6/5 | 135
+              <p style="opacity: 0.6; font-weight: lighter; padding-left: 1rem">
+                Reviews
+              </p>
+            </div>
+            <div class="item-discount">Sativa 100%</div>
+            <p class="item-price">
+              <span
+                style="
+                  opacity: 0.7;
+                  color: #9d9ea2;
+                  text-decoration: line-through;
+                "
+                >$200.00</span
+              >
+              $102.00
+            </p>
+            <div class="list-mass">
+              <div class="item-mass">28g</div>
+              <div class="item-mass">1/2lb</div>
+              <div class="item-mass">1/4lb</div>
+            </div>
+            <div class="item-button">Add to Cart</div>
+          </div>
+          <div class="product-item">
+            <div class="item-img">
+              <div class="out-of-stock">Out of Stock</div>
+              <img src="./image/image-2.png" alt="" />
+            </div>
+            <div class="item-type">FLOWER</div>
+            <div class="item-name">
+              2 Oz Deal Watermelon Zkittkes + Purple Gushers
+            </div>
+            <div class="item-star">
+              <i class="fa-solid fa-star"></i>
+              4.6/5 | 135
+              <p style="opacity: 0.6; font-weight: lighter; padding-left: 1rem">
+                Reviews
+              </p>
+            </div>
+            <div class="item-discount">Sativa 100%</div>
+            <p class="item-price">
+              <span
+                style="
+                  opacity: 0.7;
+                  color: #9d9ea2;
+                  text-decoration: line-through;
+                "
+                >$200.00</span
+              >
+              $102.00
+            </p>
+            <div class="list-mass">
+              <div class="item-mass">28g</div>
+              <div class="item-mass">1/2lb</div>
+              <div class="item-mass">1/4lb</div>
+            </div>
+            <div class="item-button">Add to Cart</div>
+          </div>
+          <div class="product-item">
+            <div class="item-img">
+              <img src="./image/product3.png" alt="" />
+            </div>
+            <div class="item-type">FLOWER</div>
+            <div class="item-name">
+              2 Oz Deal Watermelon Zkittkes + Purple Gushers
+            </div>
+            <div class="item-star">
+              <i class="fa-solid fa-star"></i>
+              4.6/5 | 135
+              <p style="opacity: 0.6; font-weight: lighter; padding-left: 1rem">
+                Reviews
+              </p>
+            </div>
+            <div class="item-discount">Sativa 100%</div>
+            <p class="item-price">
+              <span
+                style="
+                  opacity: 0.7;
+                  color: #9d9ea2;
+                  text-decoration: line-through;
+                "
+                >$200.00</span
+              >
+              $102.00
+            </p>
+            <div class="list-mass">
+              <div class="item-mass">28g</div>
+              <div class="item-mass">1/2lb</div>
+              <div class="item-mass">1/4lb</div>
+            </div>
+            <div class="item-button">Add to Cart</div>
+          </div>
+        </div>
+      </div>
+      <div class="main-advertisement">
+        <div class="advertisement-title">
+          <h1>
+            HOW TO ORDER WEED ONLINE FROM TOP SHELF BC - MAIL ORDER MARIJUANA
+          </h1>
+        </div>
+        <div class="advertisement-content">
+          <p>
+            Ordering weed online from Top Shelf BC is easy. We are proud to have
+            made the process accessible across multiple platforms and simple to
+            understand, meaning that more people can come to us to buy their
+            cannabis products online.
+          </p>
+        </div>
+        <div class="advertisement-card">
+          <div class="cart-item">
+            <div class="item-top">
+              <div class="top-number">1</div>
+              <div class="top-icon">
+                <img src="./image/img-cart1.png" alt="" />
+              </div>
+              <div class="top-name">REGISTER</div>
+            </div>
+            <div class="item-bot">
+              <p>
+                Sign up for an account with us. This is quick and simple. We
+                don’t require any more details from you than the bare minimum
+                needed for you to place an order and get your product delivered.
+              </p>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-top">
+              <div class="top-number">2</div>
+              <div class="top-icon">
+                <img src="./image/img-cart2.png" alt="" />
+              </div>
+              <div class="top-name">SHOP</div>
+            </div>
+            <div class="item-bot">
+              <p>
+                Decide on what you want to purchase. We stock a wide range of
+                edibles,flowers , concentrates and mushrooms there is bound to
+                be something for everyone.
+              </p>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-top">
+              <div class="top-number">3</div>
+              <div class="top-icon">
+                <img src="./image/img-cart3.png" alt="" />
+              </div>
+              <div class="top-name">MAKE PAYMENT</div>
+            </div>
+            <div class="item-bot">
+              <p>
+                Pay securely. Our site boasts sturdy protection certificates to
+                keep your card details and related data safe.
+              </p>
+            </div>
+          </div>
+          <div class="cart-item">
+            <div class="item-top">
+              <div class="top-number">4</div>
+              <div class="top-icon">
+                <img src="./image/img-cart4.png" alt="" />
+              </div>
+              <div class="top-name">RELAX</div>
+            </div>
+            <div class="item-bot">
+              <p>
+                Your product will be packaged discretely and shipped by Canada
+                Post Xpresspost. We will provide you with a tracking number so
+                then you can follow your mail order marijuana every step of the
+                way.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="advertisement-button">Chosse your Weed</div>
+        <div class="main-mark">
+          <div class="mark-text">
+            <div class="text-title">REFER A FRIENDS</div>
+            <div class="text-content">
+              <p>And get</p>
+              <p class="text-content__price">$30!</p>
+            </div>
+          </div>
+          <div class="mark-button">Refer Here</div>
+        </div>
+      </div>
+      <div class="main-infomation">
+        <div class="infomation-title">
+          WHAT MAKES US THE <span style="color: #f2bc1b">#1</span> ONLINE
+          MARIJUANA DISPENSARY IN CANADA?
+        </div>
+        <div class="infomation-content">
+          When it comes to what makes us the foremost online marijuana
+          dispensary in Canada, we could wax lyrical about our positive
+          qualities. Instead, to make this information clearer, we’ve
+          highlighted the six prioritized features that we feel makes us a cut
+          above the rest.
+        </div>
+        <div class="infomation-list-card">
+          <div class="card-item">
+            <div class="card-item-icon">
+              <img src="./image/infomation-cart-item1.png" alt="" />
+            </div>
+            <div class="card-item-text">
+              <div class="text-title">CUSTOMER SERVICE</div>
+              <div class="text-content">
+                Whether it is answering any questions you have before making a
+                purchase, helping out with the buying process itself or taking
+                your feedback under consideration, we are proud to provide high
+                quality customer service that makes you – the customer – the
+                most important person in the transaction.
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-item-icon">
+              <img src="./image/infomation-cart-item2.png" alt="" />
+            </div>
+            <div class="card-item-text">
+              <div class="text-title">SECURITY</div>
+              <div class="text-content">
+                When it comes to security, we only keep what details are
+                necessary for you to have an account with us and make an order.
+                When it comes to shipping your mail order marijuana out, we use
+                only tamper-proof and discrete packaging so then what you’ve
+                purchased is your business only.
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-item-icon">
+              <img src="./image/infomation-cart-item3.png" alt="" />
+            </div>
+            <div class="card-item-text">
+              <div class="text-title">BEST VALUE</div>
+              <div class="text-content">
+                We are continually adjusting what we supply and our prices to
+                ensure that we maintain an optimal balance of affordable and
+                quality for our products. We invest in the best quality strains
+                that we can find and are always on the lookout for new,
+                affordable and high quality weed products.
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-item-icon">
+              <img src="./image/infomation-cart-item4.png" alt="" />
+            </div>
+            <div class="card-item-text">
+              <div class="text-title">DELIVERY INSURANCE</div>
+              <div class="text-content">
+                If your mail order marijuana becomes lost, stolen, or damaged
+                during transit, we will send you a replacement completely free
+                of charge. Free Canada Post Xpress shipping on all orders over
+                $120
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-item-icon">
+              <img src="./image/infomation-cart-item5.png" alt="" />
+            </div>
+            <div class="card-item-text">
+              <div class="text-title">HIGHEST QUALITY</div>
+              <div class="text-content">
+                All of our cannabis products are tested to ensure that they are
+                the highest quality possible. We work with expert suppliers and
+                are always revising what makes a quality cannabis product to
+                ensure that we have only the best available.
+              </div>
+            </div>
+          </div>
+          <div class="card-item">
+            <div class="card-item-icon">
+              <img src="./image/infomation-cart-item6.png" alt="" />
+            </div>
+            <div class="card-item-text">
+              <div class="text-title">TRUST</div>
+              <div class="text-content">
+                With over 15 years in the weed business, you can rest assured
+                that you will be taken care of. You can guarantee that we have
+                your best interests in mind. Feel free to check out our reviews.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="infomation-product">
+          <div class="content-title">RECENTLY ADDED</div>
+          <nav class="product-header header-bot">
+            <div class="nav-title">Filter by Interest</div>
+            <div class="nav-item nav-bot">Flowers</div>
+            <div class="nav-item nav-bot">Mushrooms</div>
+            <div class="nav-item nav-bot">Concentrate</div>
+            <div class="nav-item nav-bot">Edible</div>
+            <div class="nav-item nav-bot">Shop All Weed</div>
+            <a href="" class="nav-link">Show All</a>
+          </nav>
+          <div class="underline"></div>
+          <div class="product-list">
+            <div class="product-item">
+              <div class="item-img">
+                <div class="out-of-stock">Out of Stock</div>
+                <img src="./image/product.png" alt="" />
+              </div>
+              <div class="item-type">FLOWER</div>
+              <div class="item-name">
+                2 Oz Deal Watermelon Zkittkes + Purple Gushers
+              </div>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                4.6/5 | 135
+                <p
+                  style="opacity: 0.6; font-weight: lighter; padding-left: 1rem"
+                >
+                  Reviews
+                </p>
+              </div>
+              <div class="item-discount">Sativa 100%</div>
+              <p class="item-price">
+                $80.00
+                <span style="color: #9d9ea2; opacity: 0.7">/ gam</span>
+              </p>
+              <div class="list-mass">
+                <div class="item-mass">28g</div>
+                <div class="item-mass">1/2lb</div>
+                <div class="item-mass">1/4lb</div>
+              </div>
+              <div class="item-button">Add to Cart</div>
+            </div>
+            <div class="product-item">
+              <div class="item-img">
+                <img src="./image/product1.png" alt="" />
+              </div>
+              <div class="item-type">FLOWER</div>
+              <div class="item-name">
+                2 Oz Deal Watermelon Zkittkes + Purple Gushers
+              </div>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                4.6/5 | 135
+                <p
+                  style="opacity: 0.6; font-weight: lighter; padding-left: 1rem"
+                >
+                  Reviews
+                </p>
+              </div>
+              <div class="item-discount">Sativa 100%</div>
+              <p class="item-price">
+                <span
+                  style="
+                    opacity: 0.7;
+                    color: #9d9ea2;
+                    text-decoration: line-through;
+                  "
+                  >$200.00</span
+                >
+                $102.00
+              </p>
+              <div class="list-mass">
+                <div class="item-mass">28g</div>
+                <div class="item-mass">1/2lb</div>
+                <div class="item-mass">1/4lb</div>
+              </div>
+              <div class="item-button">Add to Cart</div>
+            </div>
+            <div class="product-item">
+              <div class="item-img">
+                <img src="./image/image-3.png" alt="" />
+              </div>
+              <div class="item-type">FLOWER</div>
+              <div class="item-name">
+                2 Oz Deal Watermelon Zkittkes + Purple Gushers
+              </div>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                4.6/5 | 135
+                <p
+                  style="opacity: 0.6; font-weight: lighter; padding-left: 1rem"
+                >
+                  Reviews
+                </p>
+              </div>
+              <div class="item-discount">Sativa 100%</div>
+              <p class="item-price">
+                <span
+                  style="
+                    opacity: 0.7;
+                    color: #9d9ea2;
+                    text-decoration: line-through;
+                  "
+                  >$200.00</span
+                >
+                $102.00
+              </p>
+              <div class="list-mass">
+                <div class="item-mass">28g</div>
+                <div class="item-mass">1/2lb</div>
+                <div class="item-mass">1/4lb</div>
+              </div>
+              <div class="item-button">Add to Cart</div>
+            </div>
+            <div class="product-item">
+              <div class="item-img">
+                <div class="ounce">$60 ounce</div>
+                <img src="./image/product1.png" alt="" />
+              </div>
+              <div class="item-type">FLOWER</div>
+              <div class="item-name">
+                2 Oz Deal Watermelon Zkittkes + Purple Gushers
+              </div>
+              <div class="item-star">
+                <i class="fa-solid fa-star"></i>
+                4.6/5 | 135
+                <p
+                  style="opacity: 0.6; font-weight: lighter; padding-left: 1rem"
+                >
+                  Reviews
+                </p>
+              </div>
+              <div class="item-discount">Sativa 100%</div>
+              <p class="item-price">
+                <span
+                  style="
+                    opacity: 0.7;
+                    color: #9d9ea2;
+                    text-decoration: line-through;
+                  "
+                  >$200.00</span
+                >
+                $102.00
+              </p>
+              <div class="list-mass">
+                <div class="item-mass">28g</div>
+                <div class="item-mass">1/2lb</div>
+                <div class="item-mass">1/4lb</div>
+              </div>
+              <div class="item-button">Add to Cart</div>
+            </div>
+          </div>
+        </div>
+        <div class="underline"></div>
+        <div class="infomation-about">
+          <div class="about-item">
+            <div class="item-image">
+              <img src="./image/infomation-about-img1.png" alt="" />
+            </div>
+            <div class="item-name">Indica</div>
+            <div class="item-content">
+              This type of cannabis is commonly taken by those who want to sink
+              into a state of total relaxation in every limb. This reduces
+              stress overall and can take your worries and fatigue away. Because
+              of its relaxing effects, it is suggested to use this type of
+              cannabis at night. It is particularly recommended for people who
+              have trouble sleeping, be it due to insomnia, pain or other
+              associated sleep issues.
+            </div>
+            <a href="" class="item-link">Shop Indica</a>
+          </div>
+          <div class="about-item">
+            <div class="item-image">
+              <img src="./image/infomation-about-img2.png" alt="" />
+            </div>
+            <div class="item-name">Sativa</div>
+            <div class="item-content">
+              Contrary to the deep all-body relaxation that comes with the use
+              of indica strains, sativas are known for increasing the feeling of
+              creativity, enhancing focus and lessening anxiety. This is more of
+              a mind-centered high in terms of how and where you will feel the
+              effects. Given its stimulating nature, it is recommended to use
+              this during the day.
+            </div>
+            <a href="" class="item-link">Shop Sativa</a>
+          </div>
+          <div class="about-item">
+            <div class="item-image">
+              <img src="./image/infomation-about-img3.png" alt="" />
+            </div>
+            <div class="item-name">Hybirds</div>
+            <div class="item-content">
+              Hybrid strains are just that – they combine the head-focused high
+              effects of sativas with the bodily relaxation of indicas. This is
+              ideal for people who really want to sooth any fatigue and worries
+              while also clearing the mind ready to focus fresh on something
+              new. Hybrids are expertly tailored to result in strains with
+              specific effects. Useful strain vocabulary to familiarize yourself
+              with when it comes to hybrids includes sativa-dominant (full,
+              bodily relaxation), indica-dominant (boosting creativity,
+              increasing mood and lessening anxiety) and balanced (the best of
+              both worlds).
+            </div>
+            <a href="" class="item-link">Shop Hybirds</a>
+          </div>
+        </div>
+      </div>
+      <div class="main-education">
+        <header class="education-header">
+          <div class="header-title">WEED EDUCATION</div>
+          <a href="" class="header-link">Show All</a>
+        </header>
+        <div class="underline"></div>
+        <div class="education-card">
+          <div class="card-item">
+            <img
+              src="./image/education-item-image1.png"
+              alt=""
+              class="item-image"
+            />
+            <div class="item-datetime">January 24, 2023</div>
+            <div class="item-title">
+              12 Mistakes To Avoid When Buying Cannabis Online
+            </div>
+            <div class="item-content">
+              Buying cannabis online can be a great way to get your hands on the
+              products you need without leaving the comfort of your home. But …
+            </div>
+            <a href="" class="item-link">Read More</a>
+          </div>
+          <div class="card-item">
+            <img
+              src="./image/education-item-image2.png"
+              alt=""
+              class="item-image"
+            />
+            <div class="item-datetime">January 20, 2023</div>
+            <div class="item-title">
+              How To Store Cannabis and Keep it Fresh and Potent?
+            </div>
+            <div class="item-content">
+              Cannabis packaging has advanced dramatically in recent years,
+              whether your state has a medicinal marijuana programme, legal
+              adult-use weed, or both. Most ...
+            </div>
+            <a href="" class="item-link">Read More</a>
+          </div>
+          <div class="card-item">
+            <img
+              src="./image/education-item-image3.png"
+              alt=""
+              class="item-image"
+            />
+            <div class="item-datetime">January 19, 2023</div>
+            <div class="item-title">
+              The Ultimate Guide to Checking the Quality of Cannabis – 10
+              Industry Leading Tips
+            </div>
+            <div class="item-content">
+              Quality cannabis is a term used to describe cannabis products that
+              meet specific standards of excellence. It is essential to
+              understand what quality cannabis means, …
+            </div>
+            <a href="" class="item-link">Read More</a>
+          </div>
+        </div>
+      </div>
     </main>
-    <footer class="home-footer footer">
-        <div class="footer-top">
-            <div class="top-left">
-                <img src="./image/footer-top-left-logo.png" alt="" class="left-logo">
-                <div class="left-content">#1 Canadian top rated online dispensary that meets the customers needs in
-                    every single medical marijuana aspect. The team here at TopShelfBC is heavily involved in the
-                    Canadian cannabis industry for over 15 years. We strive to provide the top quality products, service
-                    and care at the lowest prices you’ll ever find.</div>
-            </div>
-            <div class="top-right">
-                <div class="right-top">
-                    <div class="top-title">QUICK LINK</div>
-                    <div class="top-link">
-                        <div class="link-item">Track Your Order</div>
-                        <div class="link-item">Mushrooms</div>
-                        <div class="link-item">Shop All</div>
-                        <div class="link-item">Promotions / Bundles</div>
-                        <div class="link-item">Flower</div>
-                        <div class="link-item">Support</div>
-                        <div class="link-item">Edibles</div>
-                        <div class="link-item">Reward</div>
-                        <div class="link-item">Concentrates</div>
-                        <div class="link-item">Blog</div>
-                        <div class="link-item">Refunds</div>
-                        <div class="link-item">Shipping Faq</div>
-                    </div>
-                </div>
-                <div class="right-mid">
-                    <div class="mid-title">CONTACT US </div>
-                    <div class="mid-email">info@topshelfbc.cc</div>
-                </div>
-                <div class="right-bot">
-                    <div class="bot-title">MORE</div>
-                    <div class="bot-content-list">
-                        <div class="list-item">Buy with online in Canada</div>
-                        <div class="list-item">Buy with online in Manitoba</div>
-                        <div class="list-item">Buy with online in New Brunswick</div>
-                        <div class="list-item">Buy with online in Quitebec</div>
-                        <div class="list-item">Buy with online in Prince Edward Island</div>
-                        <div class="list-item">Buy with online in British Columbia</div>
-                        <div class="list-item">Buy with online in Northwest Territories</div>
-                        <div class="list-item">Buy with online in Ontario</div>
-                        <div class="list-item">Buy with online in Saskatchewan</div>
-                        <div class="list-item">Buy with online in Alberta</div>
-                    </div>
-                </div>
-                <div class="right-row">
-                    <img src="./image/footer-top-right-row1.png" alt="" class="row-logo">
-                    <img src="./image/footer-top-right-row2.png" alt="" class="row-logo">
-                    <img src="./image/footer-top-right-row3.png" alt="" class="row-logo">
-                    <img src="./image/footer-top-right-row4.png" alt="" class="row-logo">
-                </div>
-            </div>
+    <footer class="footer">
+      <div class="footer-top">
+        <div class="top-left">
+          <img
+            src="./image/footer-top-left-logo.png"
+            alt=""
+            class="left-logo"
+          />
+          <div class="left-content">
+            #1 Canadian top rated online dispensary that meets the customers
+            needs in every single medical marijuana aspect. The team here at
+            TopShelfBC is heavily involved in the Canadian cannabis industry for
+            over 15 years. We strive to provide the top quality products,
+            service and care at the lowest prices you’ll ever find.
+          </div>
         </div>
-        <div class="footer-bottom">
-            <div class="bottom-left">@ 2022 Top Shelf BC. All Rights Reserved</div>
-            <div class="bottom-right">
-                <div class="left-item">Out of Stock</div>
-                <div class="left-item">Privacy Policy</div>
-                <div class="left-item">Terms & condition</div>
+        <div class="top-right">
+          <div class="right-top">
+            <div class="top-title">QUICK LINK</div>
+            <div class="top-link">
+              <div class="link-item">Track Your Order</div>
+              <div class="link-item">Mushrooms</div>
+              <div class="link-item">Shop All</div>
+              <div class="link-item">Promotions / Bundles</div>
+              <div class="link-item">Flower</div>
+              <div class="link-item">Support</div>
+              <div class="link-item">Edibles</div>
+              <div class="link-item">Reward</div>
+              <div class="link-item">Concentrates</div>
+              <div class="link-item">Blog</div>
+              <div class="link-item">Refunds</div>
+              <div class="link-item">Shipping Faq</div>
             </div>
-        </div>
-        <div class="footer-cta">
-            <div class="cta-text">
-                <div class="text-title">UNLOCK 20% OFF YOUR FIRST ORDER</div>
-                <div class="text-content">Reveal coupon code by entering your email</div>
+          </div>
+          <div class="right-mid">
+            <div class="mid-title">CONTACT US</div>
+            <div class="mid-email">info@topshelfbc.cc</div>
+          </div>
+          <div class="right-bot">
+            <div class="bot-title">MORE</div>
+            <div class="bot-content-list">
+              <div class="list-item">Buy with online in Canada</div>
+              <div class="list-item">Buy with online in Manitoba</div>
+              <div class="list-item">Buy with online in New Brunswick</div>
+              <div class="list-item">Buy with online in Quitebec</div>
+              <div class="list-item">
+                Buy with online in Prince Edward Island
+              </div>
+              <div class="list-item">Buy with online in British Columbia</div>
+              <div class="list-item">
+                Buy with online in Northwest Territories
+              </div>
+              <div class="list-item">Buy with online in Ontario</div>
+              <div class="list-item">Buy with online in Saskatchewan</div>
+              <div class="list-item">Buy with online in Alberta</div>
             </div>
-            <div class="underline"></div>
-            <form action="" class="cta-form">
-                <input type="text" class="form-input" placeholder="Email Address">
-                <button class="form-button">Reveal coupon</button>
-            </form>
+          </div>
+          <div class="right-row">
+            <img
+              src="./image/footer-top-right-row1.png"
+              alt=""
+              class="row-logo"
+            />
+            <img
+              src="./image/footer-top-right-row2.png"
+              alt=""
+              class="row-logo"
+            />
+            <img
+              src="./image/footer-top-right-row3.png"
+              alt=""
+              class="row-logo"
+            />
+            <img
+              src="./image/footer-top-right-row4.png"
+              alt=""
+              class="row-logo"
+            />
+          </div>
         </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="bottom-left">@ 2022 Top Shelf BC. All Rights Reserved</div>
+        <div class="bottom-right">
+          <div class="left-item">Out of Stock</div>
+          <div class="left-item">Privacy Policy</div>
+          <div class="left-item">Terms & condition</div>
+        </div>
+      </div>
+      <div class="footer-cta">
+        <div class="cta-text">
+          <div class="text-title">UNLOCK 20% OFF YOUR FIRST ORDER</div>
+          <div class="text-content">
+            Reveal coupon code by entering your email
+          </div>
+        </div>
+        <div class="underline"></div>
+        <form action="" class="cta-form">
+          <input type="text" class="form-input" placeholder="Email Address" />
+          <button class="form-button">Reveal coupon</button>
+        </form>
+      </div>
     </footer>
-</body>
-<script>
+  </body>
+  <script>
     function click_dropdown() {
-        document.getElementById("event-dropdown").classList.toggle("show-content");
+      document
+        .getElementById("event-dropdown")
+        .classList.toggle("show-dropdown");
     }
 
     window.onclick = function (event) {
-        if (!event.target.matches('.drop-btn')) {
-            var dropdowns = document.getElementsByClassName('dropdown-content');
-            var i;
-            for (i = 0; i < dropdowns.length; i++) {
-                var OpenDropdown = dropdowns[i];
-                if (OpenDropdown.classList.contains('show-content')) {
-                    OpenDropdown.classList.remove('show-content');
-                }
-            }
+      if (!event.target.matches(".drop-btn")) {
+        var dropdowns = document.getElementsByClassName("dropdown-content");
+        var i;
+        for (i = 0; i < dropdowns.length; i++) {
+          var OpenDropdown = dropdowns[i];
+          if (OpenDropdown.classList.contains("show-dropdown")) {
+            OpenDropdown.classList.remove("show-dropdown");
+          }
         }
-    }
-</script>
-
+      }
+    };
+  </script>
 </html>
