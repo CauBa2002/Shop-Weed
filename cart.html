@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./image/infomation-about-img1.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-notification">
+        <p>LIMITED OFFER 30% OFF. Use RABBITT ad Checkout</p>
+        <p>23 : 15 : 00</p>
+      </div>
+      <nav class="header-nav__top">
+        <img src="./image/logo.png" alt="" class="top-logo" />
+        <form action="" class="top-search">
+          <input type="text" class="search-input" placeholder="Search" />
+          <button class="search-button">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+        <div class="top-account">
+          <div class="account-user">Your Account</div>
+          <div class="account-cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+        </div>
+      </nav>
+      <nav class="header-nav__bot">
+        <div class="bot-item">
+          <span>Shop All</span>
+        </div>
+        <div class="bot-item drop-down">
+          <span class="drop-btn">Flower</span>
+          <i class="fa-solid fa-angle-down drop-btn"></i>
+          <div class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="bot-item">
+          <span>Edibles</span>
+        </div>
+        <div class="bot-item drop-down">
+          <span class="drop-btn">Concentrates</span>
+          <i class="fa-solid fa-angle-down drop-btn"></i>
+          <div id="event-dropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="bot-item">
+          <span>Mushrooms</span>
+        </div>
+        <div class="bot-item drop-down">
+          <span class="drop-btn">Promotions/Bundles</span>
+          <i class="fa-solid fa-angle-down drop-btn"></i>
+          <div id="event-dropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="bot-item drop-down">
+          <span class="drop-btn">Support</span>
+          <i class="fa-solid fa-angle-down drop-btn"></i>
+          <div id="event-dropdown" class="dropdown-content">
+            <a href="#">Link 1</a>
+            <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+          </div>
+        </div>
+        <div class="bot-item">
+          <span>Rewards</span>
+        </div>
+        <div class="bot-item">
+          <span>Blog</span>
+        </div>
+      </nav>
+    </header>
+    <main class="cart-main">
+      <header class="main-header">
+        <button class="header-button button-tab" onclick="tabContent(event, 'shopping')">
+          <div class="button-icon">
+            <i class="fa-solid fa-bag-shopping"></i>
+          </div>
+          <span class="button-text">Shopping Cart</span>
+        </button>
+        <div class="header-line line-first"></div>
+        <button class="header-button button-tab" onclick="tabContent(event, 'checkout')">
+          <div class="button-icon">
+            <i class="fa-regular fa-credit-card"></i>
+          </div>
+          <span class="button-text">Checkout</span>
+        </button>
+        <div class="header-line line-second"></div>
+        <button class="header-button button-tab" onclick="tabContent(event, 'order')">
+          <div class="button-icon">
+            <i class="fa-solid fa-ticket"></i>
+          </div>
+          <span class="button-text">Order Complete</span>
+        </button>
+      </header>
+      <main class="main-content content-shopping" id="shopping">
+        <div class="content-left">
+          <div class="left-text">
+            <span class="text-title">Your Cart</span>
+            <span class="text-count">(3)</span>
+          </div>
+          <div class="left-list">
+            <div class="list-item">
+              <div class="item-image">
+                <img src="./image/image-2.png" alt="" class="image-product" />
+              </div>
+              <div class="item-row">
+                <span class="row-name-product">1x Khalifa Kush (AAAA)</span>
+                <div class="row-frame">
+                  <i class="fa-solid fa-minus"></i>
+                  <button class="frame-count">1</button>
+                  <i class="fa-solid fa-plus"></i>
+                  <span class="frame-price">$120.00</span>
+                </div>
+                <span class="row-price">$120.00</span>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="item-image">
+                <img src="./image/product3.png" alt="" class="image-product" />
+              </div>
+              <div class="item-row">
+                <span class="row-name-product">1x Jungle Diamond (AA+)</span>
+                <div class="row-frame">
+                  <i class="fa-solid fa-minus"></i>
+                  <button class="frame-count">1</button>
+                  <i class="fa-solid fa-plus"></i>
+                  <span class="frame-price">$200.00</span>
+                </div>
+                <span class="row-price">$200.00</span>
+              </div>
+            </div>
+            <div class="list-item">
+              <div class="item-image">
+                <img src="./image/product1.png" alt="" class="image-product" />
+              </div>
+              <div class="item-row">
+                <span class="row-name-product">Shipwreck Edibles Gummy</span>
+                <div class="row-frame">
+                  <i class="fa-solid fa-minus"></i>
+                  <button class="frame-count">1</button>
+                  <i class="fa-solid fa-plus"></i>
+                  <span class="frame-price">$102.00</span>
+                </div>
+                <span class="row-price">$102.00</span>
+              </div>
+            </div>
+          </div>
+          <div class="left-panel">
+            <div class="panel-item">
+              <p class="item-name">Delivery</p>
+              <div class="item-block">
+                <div class="block-icon"><i class="fa-solid fa-tag"></i></div>
+                <p class="block-title">
+                  Order by 10pm for free next day delivery on Orders overs $100
+                </p>
+                <p class="block-content">
+                  We deliver Monday to Saturday - excluding Holidays
+                </p>
+              </div>
+            </div>
+            <div class="panel-item">
+              <p class="item-name" style="color: #fff">None</p>
+              <div class="item-block">
+                <div class="block-icon">
+                  <i class="fa-regular fa-clock"></i>
+                </div>
+                <p class="block-title">Free next day delivery to stores.</p>
+                <p class="block-content">
+                  Home delivery is $4.99 for orders under $100 and is FREE for
+                  all orders over $100
+                </p>
+              </div>
+            </div>
+            <div class="panel-item">
+              <p class="item-name">Free Returns</p>
+              <div class="item-block">
+                <div class="block-icon">
+                  <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <p class="block-content">
+                  30 days to return it to us for a refund. We have made returns
+                  SO EASY - you can now return your order to a store or send it
+                  with FedEx FOR FREE
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="content-right">
+          <div class="right-list">
+            <div class="list-row">
+              <span class="row-title">Subtotal</span>
+              <span class="row-price">$422.00</span>
+            </div>
+            <div class="list-row">
+              <span class="row-title">Discount</span>
+              <span class="row-price">$0.00</span>
+            </div>
+            <div class="list-row">
+              <span class="row-title">Shipping Costs</span>
+              <span class="row-price">$45.00</span>
+            </div>
+          </div>
+          <div class="right-search">
+            <div class="search-coupon">
+              <input
+                type="text"
+                class="coupon-input"
+                placeholder="Coupon Code"
+              />
+            </div>
+            <button class="search-button">Apply Coupon</button>
+          </div>
+          <div class="right-shipping">
+            <div class="shipping-line">
+              <div class="line"></div>
+            </div>
+            <p class="shipping-text">
+              Get Free <span style="color: black">Shipping</span> for orders
+              over <span style="color: #eb2606">$100.00</span>
+              <a href="">Continue Shopping</a>
+            </p>
+          </div>
+          <div class="right-button">
+            <span class="button-text">Checkout</span>
+            <div class="button-line"></div>
+            <span class="button-text">$467.00</span>
+          </div>
+          <div class="right-quantity">
+            <p class="quantity-title">SECURE PAYMENTS PROVIDED BY</p>
+            <div class="quantity-row">
+              <img src="./image/pay1.png" alt="" class="row-image" />
+              <img src="./image/pay2.png" alt="" class="row-image" />
+              <img src="./image/pay3.png" alt="" class="row-image" />
+              <img src="./image/pay4.png" alt="" class="row-image" />
+            </div>
+          </div>
+        </div>
+      </main>
+      <main class="main-content content-checkout" id="checkout">
+        <div class="content-left">
+          <div class="left-text">
+            <span class="text-title">Your Cart</span>
+            <span class="text-count">(3)</span>
+          </div>
+          <form action="" class="left-form-info">
+            <div class="info-name">
+              <div class="row-item">
+                <p class="item-title">First Name *</p>
+                <input type="text" class="item-input" />
+              </div>
+              <div class="row-item">
+                <p class="item-title">Last Name *</p>
+                <input type="text" class="item-input" />
+              </div>
+            </div>
+            <div class="row-item">
+              <div class="item-title">Country / Region *</div>
+              <input type="text" class="item-input" value="Singapore" />
+            </div>
+            <div class="row-item">
+              <div class="item-title">Country / Region *</div>
+              <input
+                type="text"
+                class="item-input"
+                placeholder="Home number and strees name"
+              />
+              <input
+                type="text"
+                class="item-input"
+                placeholder="Apartment, suite, unit, etc. (optional)"
+              />
+            </div>
+            <div class="info-row">
+              <div class="row-item">
+                <p class="item-title">Town / City *</p>
+                <input type="text" class="item-input" />
+              </div>
+              <div class="row-item">
+                <p class="item-title">Provine *</p>
+                <input type="text" class="item-input" />
+              </div>
+              <div class="row-item">
+                <p class="item-title">Postcode / Zip *</p>
+                <input type="text" class="item-input" />
+              </div>
+            </div>
+            <div class="info-phone-email">
+              <div class="row-item">
+                <p class="item-title">Phone (Optional)</p>
+                <input type="text" class="item-input" />
+              </div>
+              <div class="row-item">
+                <p class="item-title">Email Address *</p>
+                <input
+                  type="email"
+                  class="item-input"
+                  value="Johndoe@example.com"
+                />
+              </div>
+            </div>
+          </form>
+          <form action="" class="left-form-about">
+            <label for="" class="about-title">
+              <input type="checkbox" class="title-input" />
+              <span class="title-text">Ship to a different Address?</span>
+            </label>
+            <div class="about-form">
+              <p class="form-title">Order Notes (Optional)</p>
+              <textarea name="" id="" cols="30" rows="6" class="form-input" placeholder="Notes about your order, e.g. special notes for delevery."></textarea>
+            </div>
+          </form>
+          <form action="" class="left-form-about">
+            <p class="about-title">What would you like us to do if an Item is out os Stock?</p>
+            <input type="text" class="about-input" value="Contact me (With delay)" />
+          </form>
+          <form action="" class="left-form-about">
+            <p class="about-title">Where did your hear About Us?</p>
+            <textarea name="" id="" cols="30" rows="5" class="about-input" placeholder="Notes about your order, e.g.special notes for delivery"></textarea>
+          </form>
+        </div>
+        <div class="content-right">
+          <div class="right-list">
+            <div class="list-row">
+              <span class="row-title">Subtotal</span>
+              <span class="row-price">$422.00</span>
+            </div>
+            <div class="list-row">
+              <span class="row-title">Discount</span>
+              <span class="row-price">$0.00</span>
+            </div>
+            <div class="list-row">
+              <span class="row-title">Shipping Costs</span>
+              <span class="row-price">$45.00</span>
+            </div>
+          </div>
+          <div class="right-row">
+            <p class="row-title">Email Money Trasfer</p>
+            <img src="./image/pay4.png" alt="" class="row-image">
+          </div>
+          <div class="right-search">
+            <div class="search-coupon">
+              <input
+                type="text"
+                class="coupon-input"
+                placeholder="Coupon Code"
+              />
+            </div>
+            <button class="search-button">Apply Coupon</button>
+          </div>
+          <div class="right-checkbox">
+            <div class="checkbox-item">
+              <div class="item-checkbox">
+                <input type="checkbox" name="" id="">
+              </div>
+              <span class="item-content">I confirm that my address is 100% correct and WILL NOT hold Top Shelf BC liable if this shipment is sent to an incorrect address. *</span>
+            </div>
+            <div class="checkbox-item">
+              <div class="item-checkbox">
+                <input type="checkbox" name="" id="">
+              </div>
+              <span class="item-content">Sign me up to receive email updates and news (optional)</span>
+            </div>
+          </div>
+          <div class="right-tick">
+            <div class="tick-content">
+              <img src="./image/icon-pay.png" alt="" class="content-image">
+              <span class="content-text">Your point <span style="color: #060709; font-weight: bold; padding-left: 4px;">10.850</span></span>
+            </div>
+            <label class="switch">
+              <input type="checkbox">
+              <span class="slider round"></span>
+            </label>
+          </div>
+          <div class="right-button">
+            <span class="button-text">Checkout</span>
+            <div class="button-line"></div>
+            <span class="button-text">$467.00</span>
+          </div>
+          <div class="right-quantity">
+            <p class="quantity-title">SECURE PAYMENTS PROVIDED BY</p>
+            <div class="quantity-row">
+              <img src="./image/pay1.png" alt="" class="row-image" />
+              <img src="./image/pay2.png" alt="" class="row-image" />
+              <img src="./image/pay3.png" alt="" class="row-image" />
+              <img src="./image/pay4.png" alt="" class="row-image" />
+            </div>
+          </div>
+        </div>
+      </main>
+      <main class="main-content content-order" id="order">
+        <div class="order-top">
+          <div class="top-title">Your Order</div>
+          <div class="top-row">
+            <i class="fa-solid fa-circle-check"></i>
+            <span class="row-content">Paid</span>
+          </div>
+        </div>
+        <div class="order-list">
+          <div class="list-item">
+            <div class="item-image">
+              <img src="./image/product3.png" alt="" class="image-product">
+            </div>
+            <div class="item-row">
+              <span class="row-name-product">1x Khalifa Kush (AAAA)</span>
+              <p class="row-frame">
+                1x<span style="color: #060709; padding-left: 8px;">$125.00</span>                
+              </p>
+              <p class="row-price">$100.00</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="item-image">
+              <img src="./image/product1.png" alt="" class="image-product">
+            </div>
+            <div class="item-row">
+              <span class="row-name-product">1x Jungle Diamond (AA+)</span>
+              <p class="row-frame">
+                1x<span style="color: #060709; padding-left: 8px;">$102.00</span>                
+              </p>
+              <p class="row-price">$102.00</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <div class="item-image">
+              <img src="./image/image-2.png" alt="" class="image-product">
+            </div>
+            <div class="item-row">
+              <span class="row-name-product">Shipwerck Edibles Gummy</span>
+              <p class="row-frame">
+                1x<span style="color: #060709; padding-left: 8px;">$220.00</span>                
+              </p>
+              <p class="row-price">$200.00</p>
+            </div>
+          </div>
+          <div class="list-item">
+            <p class="item-title">Total</p>
+            <span class="item-price">$447.00</span>
+          </div>
+        </div>
+        <div class="order-frame">
+          <div class="frame-content">
+            <div class="content-row">
+              <span class="row-title">Shipping</span>
+              <span class="row-content">New York, US</span>
+            </div>
+            <div class="content-row">
+              <span class="row-title">Shipping Options</span>
+              <span class="row-content">Same-Day Dispatching</span>
+            </div>
+            <div class="content-row">
+              <span class="row-title">Email Money Transfer</span>
+              <span class="row-content">Interac</span>
+            </div>
+          </div>
+          <div class="frame-content">
+            <div class="content-row">
+              <span class="row-title">Subtotal</span>
+              <span class="row-content">$447.00</span>
+            </div>
+            <div class="content-row">
+              <span class="row-title">Discount</span>
+              <span class="row-content">$0.0</span>
+            </div>
+            <div class="content-row">
+              <span class="row-title">Shipping Costs</span>
+              <span class="row-content">$45.00</span>
+            </div>
+            <div class="content-row">
+              <span class="row-title">Point</span>
+              <span class="row-content">-$250</span>
+            </div>
+            <div class="content-result">
+              <span class="result-title">Total</span>
+              <span class="result-price">$297.00</span>
+            </div>
+          </div>
+        </div>
+        <div class="order-item">
+          <div class="item-title">New Order, Click button bellow</div>
+          <button class="item-button">Shop Now</button>
+        </div>
+      </main>
+    </main>
+  </body>
+  <script>
+    function tabContent(evt, contentName){
+      var i, tabcontent, tabbutton;
+
+      tabcontent = document.getElementsByClassName("main-content");
+      for(i = 0 ; i< tabcontent.length; i++){
+        tabcontent[i].style.display = "none";
+      }
+      
+      tabbutton = document.getElementsByClassName("button-tab");
+      for(i = 0; i < tabbutton.length; i++){
+        tabbutton[i].className = tabbutton[i].className.replace("active", "");
+      }
+      document.getElementById(contentName).style.display = "flex";
+      evt.currentTarget.className += "active";
+    }
+  </script>
+</html>
