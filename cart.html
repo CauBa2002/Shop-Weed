@@ -104,21 +104,30 @@
     </header>
     <main class="cart-main">
       <header class="main-header">
-        <button class="header-button button-tab" onclick="tabContent(event, 'shopping')">
+        <button
+          class="header-button button-tab"
+          onclick="tabContent(event, 'shopping')"
+        >
           <div class="button-icon">
             <i class="fa-solid fa-bag-shopping"></i>
           </div>
           <span class="button-text">Shopping Cart</span>
         </button>
         <div class="header-line line-first"></div>
-        <button class="header-button button-tab" onclick="tabContent(event, 'checkout')">
+        <button
+          class="header-button button-tab"
+          onclick="tabContent(event, 'checkout')"
+        >
           <div class="button-icon">
             <i class="fa-regular fa-credit-card"></i>
           </div>
           <span class="button-text">Checkout</span>
         </button>
         <div class="header-line line-second"></div>
-        <button class="header-button button-tab" onclick="tabContent(event, 'order')">
+        <button
+          class="header-button button-tab"
+          onclick="tabContent(event, 'order')"
+        >
           <div class="button-icon">
             <i class="fa-solid fa-ticket"></i>
           </div>
@@ -140,8 +149,8 @@
                 <span class="row-name-product">1x Khalifa Kush (AAAA)</span>
                 <div class="row-frame">
                   <i class="fa-solid fa-minus"></i>
-                  <button class="frame-count">1</button>
-                  <i class="fa-solid fa-plus"></i>
+                  <button class="frame-count" id="count-growth">1</button>
+                  <i onclick="countGrowth()" class="fa-solid fa-plus"></i>
                   <span class="frame-price">$120.00</span>
                 </div>
                 <span class="row-price">$120.00</span>
@@ -155,8 +164,8 @@
                 <span class="row-name-product">1x Jungle Diamond (AA+)</span>
                 <div class="row-frame">
                   <i class="fa-solid fa-minus"></i>
-                  <button class="frame-count">1</button>
-                  <i class="fa-solid fa-plus"></i>
+                  <button class="frame-count" id="count-growth">1</button>
+                  <i onclick="countGrowth()" class="fa-solid fa-plus"></i>
                   <span class="frame-price">$200.00</span>
                 </div>
                 <span class="row-price">$200.00</span>
@@ -170,8 +179,8 @@
                 <span class="row-name-product">Shipwreck Edibles Gummy</span>
                 <div class="row-frame">
                   <i class="fa-solid fa-minus"></i>
-                  <button class="frame-count">1</button>
-                  <i class="fa-solid fa-plus"></i>
+                  <button class="frame-count" id="count-growth">1</button>
+                  <i onclick="countGrowth()" class="fa-solid fa-plus"></i>
                   <span class="frame-price">$102.00</span>
                 </div>
                 <span class="row-price">$102.00</span>
@@ -340,16 +349,36 @@
             </label>
             <div class="about-form">
               <p class="form-title">Order Notes (Optional)</p>
-              <textarea name="" id="" cols="30" rows="6" class="form-input" placeholder="Notes about your order, e.g. special notes for delevery."></textarea>
+              <textarea
+                name=""
+                id=""
+                cols="30"
+                rows="6"
+                class="form-input"
+                placeholder="Notes about your order, e.g. special notes for delevery."
+              ></textarea>
             </div>
           </form>
           <form action="" class="left-form-about">
-            <p class="about-title">What would you like us to do if an Item is out os Stock?</p>
-            <input type="text" class="about-input" value="Contact me (With delay)" />
+            <p class="about-title">
+              What would you like us to do if an Item is out os Stock?
+            </p>
+            <input
+              type="text"
+              class="about-input"
+              value="Contact me (With delay)"
+            />
           </form>
           <form action="" class="left-form-about">
             <p class="about-title">Where did your hear About Us?</p>
-            <textarea name="" id="" cols="30" rows="5" class="about-input" placeholder="Notes about your order, e.g.special notes for delivery"></textarea>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="5"
+              class="about-input"
+              placeholder="Notes about your order, e.g.special notes for delivery"
+            ></textarea>
           </form>
         </div>
         <div class="content-right">
@@ -369,7 +398,7 @@
           </div>
           <div class="right-row">
             <p class="row-title">Email Money Trasfer</p>
-            <img src="./image/pay4.png" alt="" class="row-image">
+            <img src="./image/pay4.png" alt="" class="row-image" />
           </div>
           <div class="right-search">
             <div class="search-coupon">
@@ -384,24 +413,36 @@
           <div class="right-checkbox">
             <div class="checkbox-item">
               <div class="item-checkbox">
-                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="" />
               </div>
-              <span class="item-content">I confirm that my address is 100% correct and WILL NOT hold Top Shelf BC liable if this shipment is sent to an incorrect address. *</span>
+              <span class="item-content"
+                >I confirm that my address is 100% correct and WILL NOT hold Top
+                Shelf BC liable if this shipment is sent to an incorrect
+                address. *</span
+              >
             </div>
             <div class="checkbox-item">
               <div class="item-checkbox">
-                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="" />
               </div>
-              <span class="item-content">Sign me up to receive email updates and news (optional)</span>
+              <span class="item-content"
+                >Sign me up to receive email updates and news (optional)</span
+              >
             </div>
           </div>
           <div class="right-tick">
             <div class="tick-content">
-              <img src="./image/icon-pay.png" alt="" class="content-image">
-              <span class="content-text">Your point <span style="color: #060709; font-weight: bold; padding-left: 4px;">10.850</span></span>
+              <img src="./image/icon-pay.png" alt="" class="content-image" />
+              <span class="content-text"
+                >Your point
+                <span
+                  style="color: #060709; font-weight: bold; padding-left: 4px"
+                  >10.850</span
+                ></span
+              >
             </div>
             <label class="switch">
-              <input type="checkbox">
+              <input type="checkbox" />
               <span class="slider round"></span>
             </label>
           </div>
@@ -432,36 +473,36 @@
         <div class="order-list">
           <div class="list-item">
             <div class="item-image">
-              <img src="./image/product3.png" alt="" class="image-product">
+              <img src="./image/product3.png" alt="" class="image-product" />
             </div>
             <div class="item-row">
               <span class="row-name-product">1x Khalifa Kush (AAAA)</span>
               <p class="row-frame">
-                1x<span style="color: #060709; padding-left: 8px;">$125.00</span>                
+                1x<span style="color: #060709; padding-left: 8px">$125.00</span>
               </p>
               <p class="row-price">$100.00</p>
             </div>
           </div>
           <div class="list-item">
             <div class="item-image">
-              <img src="./image/product1.png" alt="" class="image-product">
+              <img src="./image/product1.png" alt="" class="image-product" />
             </div>
             <div class="item-row">
               <span class="row-name-product">1x Jungle Diamond (AA+)</span>
               <p class="row-frame">
-                1x<span style="color: #060709; padding-left: 8px;">$102.00</span>                
+                1x<span style="color: #060709; padding-left: 8px">$102.00</span>
               </p>
               <p class="row-price">$102.00</p>
             </div>
           </div>
           <div class="list-item">
             <div class="item-image">
-              <img src="./image/image-2.png" alt="" class="image-product">
+              <img src="./image/image-2.png" alt="" class="image-product" />
             </div>
             <div class="item-row">
               <span class="row-name-product">Shipwerck Edibles Gummy</span>
               <p class="row-frame">
-                1x<span style="color: #060709; padding-left: 8px;">$220.00</span>                
+                1x<span style="color: #060709; padding-left: 8px">$220.00</span>
               </p>
               <p class="row-price">$200.00</p>
             </div>
@@ -517,16 +558,16 @@
     </main>
   </body>
   <script>
-    function tabContent(evt, contentName){
+    function tabContent(evt, contentName) {
       var i, tabcontent, tabbutton;
 
       tabcontent = document.getElementsByClassName("main-content");
-      for(i = 0 ; i< tabcontent.length; i++){
+      for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
       }
-      
+
       tabbutton = document.getElementsByClassName("button-tab");
-      for(i = 0; i < tabbutton.length; i++){
+      for (i = 0; i < tabbutton.length; i++) {
         tabbutton[i].className = tabbutton[i].className.replace("active", "");
       }
       document.getElementById(contentName).style.display = "flex";

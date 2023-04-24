@@ -2543,6 +2543,7 @@
 .list-item .item-row {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   flex: 1;
 }
 
@@ -2557,7 +2558,7 @@
 .item-row .row-frame {
   display: flex;
   align-items: center;
-  flex: 1;
+  flex: 0;
 }
 
 .row-frame .fa-solid {
@@ -2582,7 +2583,6 @@
 }
 
 .row-frame .frame-price {
-  padding-left: 16px;
   font-weight: 600;
   color: #060709;
 }
@@ -2853,11 +2853,11 @@
 }
 
 .switch input:checked + .slider {
-  background-color: #2196F3;
+  background-color: #17af26;
 }
 
 .switch input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
+  box-shadow: 0 0 1px #17af26;
 }
 
 .switch input:checked + .slider:before {
