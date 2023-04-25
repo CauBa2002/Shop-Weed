@@ -34,7 +34,9 @@
         <p>23 : 15 : 00</p>
       </div>
       <nav class="header-nav__top">
-        <img src="./image/logo.png" alt="" class="top-logo" />
+        <a href="./home.html" class="top-logo"
+          ><img src="./image/logo.png" alt=""
+        /></a>
         <form action="" class="top-search">
           <input type="text" class="search-input" placeholder="Search" />
           <button class="search-button">
@@ -44,16 +46,16 @@
         <div class="top-account">
           <div class="account-user">Your Account</div>
           <div class="account-cart">
-            <i class="fa-solid fa-bag-shopping"></i>
+            <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
           </div>
         </div>
       </nav>
       <nav class="header-nav__bot">
         <div class="bot-item">
-          <span>Shop All</span>
+          <span><a href="./category.html">Shop All</a></span>
         </div>
         <div class="bot-item drop-down">
-          <span class="drop-btn">Flower</span>
+          <span class="drop-btn"><a href="">Flower</a></span>
           <i class="fa-solid fa-angle-down drop-btn"></i>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
@@ -62,10 +64,10 @@
           </div>
         </div>
         <div class="bot-item">
-          <span>Edibles</span>
+          <span><a href="">Edibles</a></span>
         </div>
         <div class="bot-item drop-down">
-          <span class="drop-btn">Concentrates</span>
+          <span class="drop-btn"><a href="">Concentrates</a></span>
           <i class="fa-solid fa-angle-down drop-btn"></i>
           <div id="event-dropdown" class="dropdown-content">
             <a href="#">Link 1</a>
@@ -74,10 +76,10 @@
           </div>
         </div>
         <div class="bot-item">
-          <span>Mushrooms</span>
+          <span><a href="">Mushrooms</a></span>
         </div>
         <div class="bot-item drop-down">
-          <span class="drop-btn">Promotions/Bundles</span>
+          <span class="drop-btn"><a href="">Promotions/Bundles</a></span>
           <i class="fa-solid fa-angle-down drop-btn"></i>
           <div id="event-dropdown" class="dropdown-content">
             <a href="#">Link 1</a>
@@ -86,7 +88,7 @@
           </div>
         </div>
         <div class="bot-item drop-down">
-          <span class="drop-btn">Support</span>
+          <span class="drop-btn"><a href="">Support</a></span>
           <i class="fa-solid fa-angle-down drop-btn"></i>
           <div id="event-dropdown" class="dropdown-content">
             <a href="#">Link 1</a>
@@ -95,39 +97,30 @@
           </div>
         </div>
         <div class="bot-item">
-          <span>Rewards</span>
+          <span><a href="">Rewards</a></span>
         </div>
         <div class="bot-item">
-          <span>Blog</span>
+          <span><a href="">Blog</a></span>
         </div>
       </nav>
     </header>
     <main class="cart-main">
       <header class="main-header">
-        <button
-          class="header-button button-tab"
-          onclick="tabContent(event, 'shopping')"
-        >
+        <button class="header-button button-tab" onclick="tabContent(event, 'shopping')">
           <div class="button-icon">
             <i class="fa-solid fa-bag-shopping"></i>
           </div>
           <span class="button-text">Shopping Cart</span>
         </button>
         <div class="header-line line-first"></div>
-        <button
-          class="header-button button-tab"
-          onclick="tabContent(event, 'checkout')"
-        >
+        <button class="header-button">
           <div class="button-icon">
             <i class="fa-regular fa-credit-card"></i>
           </div>
           <span class="button-text">Checkout</span>
         </button>
         <div class="header-line line-second"></div>
-        <button
-          class="header-button button-tab"
-          onclick="tabContent(event, 'order')"
-        >
+        <button class="header-button">
           <div class="button-icon">
             <i class="fa-solid fa-ticket"></i>
           </div>
@@ -263,7 +256,7 @@
               <a href="">Continue Shopping</a>
             </p>
           </div>
-          <div class="right-button">
+          <div class="right-button button-tab" onclick="tabContent(event, 'checkout')">
             <span class="button-text">Checkout</span>
             <div class="button-line"></div>
             <span class="button-text">$467.00</span>
@@ -446,7 +439,8 @@
               <span class="slider round"></span>
             </label>
           </div>
-          <div class="right-button">
+          <div class="right-button button-tab" onclick="tabContent(event, 'order')"
+          >
             <span class="button-text">Checkout</span>
             <div class="button-line"></div>
             <span class="button-text">$467.00</span>
@@ -552,7 +546,7 @@
         </div>
         <div class="order-item">
           <div class="item-title">New Order, Click button bellow</div>
-          <button class="item-button">Shop Now</button>
+          <button class="item-button"><a href="./category.html">Shop Now</a></button>
         </div>
       </main>
     </main>

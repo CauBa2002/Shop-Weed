@@ -75,6 +75,10 @@
   opacity: 0.8;
 }
 
+.top-account .account-cart a{
+  color: #000;
+}
+
 .header .header-nav__bot {
   border: 1px solid #f4f4f4;
   padding: 12px 64px;
@@ -90,6 +94,11 @@
   gap: 0.5rem;
   font-weight: 600;
   z-index: 99;
+}
+
+.bot-item a{
+  text-decoration: none;
+  color: #000;
 }
 
 .header-nav__bot .drop-down {
@@ -3174,10 +3183,14 @@
 .order-item .item-button{
   padding: 16px 32px;
   background: #17af26;
-  color: #fff;
   border: none;
   border-radius: 100px;
   font-size: 18px;
+}
+
+.order-item .item-button a{
+  color: #fff;
+  text-decoration: none;
 }
 
 /* ------------------ KEYFRAME ------------------ */
